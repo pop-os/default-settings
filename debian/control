@@ -19,7 +19,7 @@ Description: default settings for the System76 desktop
 
 Package: grub-theme-system76
 Architecture: any-i386 any-amd64 any-powerpc any-ppc64 any-ppc64el any-sparc any-sparc64 any-mipsel any-ia64 any-arm any-arm64
-Depends: ${misc:Depends}, grub-common (= ${binary:Version})
+Depends: ${misc:Depends}, grub-common
 Multi-Arch: foreign
 Description: GRand Unified Bootloader, version 2 (system76 theme)
  This is the default system76 theme for GRUB's graphical menu.

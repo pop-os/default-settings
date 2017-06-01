@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=System76 Logo
+Description=A theme that features an animated System76 logo.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/system76-logo
+ScriptFile=/usr/share/plymouth/themes/system76-logo/system76-logo.script

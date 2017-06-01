@@ -1,0 +1,11 @@
+[Plymouth Theme]
+Name=System76 Text
+Description=Text mode theme based on system76-logo theme
+ModuleName=ubuntu-text
+
+[ubuntu-text]
+title=System76 VERSION
+black=0x574f4a
+white=0xffffff
+brown=0x0087ed
+blue=0x133773

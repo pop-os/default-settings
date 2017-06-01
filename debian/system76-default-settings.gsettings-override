@@ -1,0 +1,46 @@
+[org.gnome.desktop.background]
+show-desktop-icons=true
+picture-uri='file:///usr/share/backgrounds/System76-Unleash_Your_Robot_Blue-by_Kate_Hazen_of_System76.png'
+
+[org.gnome.desktop.screensaver]
+picture-uri='file:///usr/share/backgrounds/System76-Robot-by_Kate_Hazen_of_System76.png'
+
+[org.gnome.desktop.interface]
+gtk-theme="Pop"
+icon-theme="Pop"
+cursor-theme="Pop"
+font-name="Fira Sans Semi-Light 10"
+document-font-name="Roboto Slab 11"
+monospace-font-name="Fira Mono 11"
+
+[org.gnome.desktop.wm.preferences]
+theme="Pop"
+titlebar-font='Fira Sans Semi-Bold 10'
+
+[org.gnome.login-screen]
+logo='/usr/share/plymouth/themes/system76-logo/system76_logo.png'
+
+[org.gnome.shell]
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=[ 'ubiquity.desktop', 'firefox.desktop', 'evolution.desktop', 'rhythmbox.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'yelp.desktop' ]
+app-picker-view=1
+
+[org.gnome.shell.extensions.user-theme]
+name='Pop'
+
+[org.gnome.Terminal.Legacy.Profile]
+foreground-color='rgb(242,242,242)'
+visible-name='System76'
+palette=['rgb(51,51,51)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(87,78,74)', 'rgb(241,93,34)', 'rgb(115,196,143)', 'rgb(255,206,81)', 'rgb(72,185,199)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+cursor-background-color='rgb(246,246,246)'
+use-system-font=false
+cursor-colors-set=true
+highlight-colors-set=true
+use-theme-colors=false
+font='Fira Mono 12'
+cursor-foreground-color='rgb(73,185,199)'
+bold-color-same-as-fg=true
+bold-color='rgb(115,196,143)'
+background-color='rgb(87,79,74)'
+highlight-background-color='rgb(72,185,199)'
+highlight-foreground-color='rgb(255,255,255)'

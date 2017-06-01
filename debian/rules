@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+override_dh_installgsettings:
+	dh_installgsettings --priority=50
+
+%:
+	dh $@

@@ -1,0 +1,51 @@
+Source: system76-default-settings
+Section: x11
+Priority: optional
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 3.9.8
+Vcs-Bzr: https://code.launchpad.net/~system76-dev/system76-default-settings/trunk
+
+Package: system76-default-settings
+Architecture: all
+Depends: ${misc:Depends},
+         system76-pop-theme,
+         libglib2.0-bin,
+Recommends: system76-wallpapers
+Breaks: system76-wallpapers-xenial (<< 16.10.1)
+Replaces: system76-wallpapers-xenial (<< 16.10.1)
+Description: default settings for the System76 desktop
+ This package contains the default settings used by System76.
+
+Package: grub-theme-system76
+Architecture: any-i386 any-amd64 any-powerpc any-ppc64 any-ppc64el any-sparc any-sparc64 any-mipsel any-ia64 any-arm any-arm64
+Depends: ${misc:Depends}, grub-common (= ${binary:Version})
+Multi-Arch: foreign
+Description: GRand Unified Bootloader, version 2 (system76 theme)
+ This is the default system76 theme for GRUB's graphical menu.
+
+Package: plymouth-theme-system76-logo
+Architecture: all
+Depends: ${misc:Depends}, plymouth, plymouth-label
+Provides: plymouth-theme
+Breaks: plymouth (<< 0.9.2-3ubuntu1~),
+Description: graphical boot animation and logger - system76-logo theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the default system76-logo theme.
+
+Package: plymouth-theme-system76-text
+Architecture: all
+Depends: ${misc:Depends}, plymouth, plymouth-theme-ubuntu-text
+Provides: plymouth-theme
+Replaces: plymouth (<< 0.8.1-1~)
+Breaks: plymouth (<< 0.9.2-3ubuntu1~),
+Description: graphical boot animation and logger - system76-text theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the default system76-text text theme used when no
+ support for a graphical theme is found on your system.

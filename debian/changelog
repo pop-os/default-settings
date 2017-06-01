@@ -1,3 +1,9 @@
+system76-default-settings (17.10.13) zesty; urgency=medium
+
+  * Fix grub theme depends
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 01 Jun 2017 16:06:41 -0600
+
 system76-default-settings (17.10.12) zesty; urgency=medium
 
   * Add grub theme

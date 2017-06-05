@@ -9,8 +9,10 @@ Vcs-Bzr: https://code.launchpad.net/~system76-dev/system76-default-settings/trun
 Package: system76-default-settings
 Architecture: all
 Depends: ${misc:Depends},
-         system76-pop-theme,
          libglib2.0-bin,
+         gnome-shell-extension-better-volume,
+         gnome-shell-extension-suspend-button,
+         system76-pop-theme,
 Recommends: system76-wallpapers
 Breaks: system76-wallpapers-xenial (<< 16.10.1)
 Replaces: system76-wallpapers-xenial (<< 16.10.1)

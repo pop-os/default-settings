@@ -6,12 +6,6 @@ title-text: ""
 desktop-image: "background.png"
 desktop-image-scale-method: "stretch"
 desktop-color: "#574F4A"
-terminal-box: "terminal_box_*.png"
-terminal-left: "10%"
-terminal-top: "10%"
-terminal-width: "80%"
-terminal-height: "80%"
-terminal-border: "0"
 
 # Logo image
 + image {

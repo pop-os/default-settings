@@ -1,3 +1,9 @@
+system76-default-settings (17.10.16) zesty; urgency=medium
+
+  * Remove terminal box
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 05 Jun 2017 16:52:49 -0600
+
 system76-default-settings (17.10.15) zesty; urgency=medium
 
   * Add throbber

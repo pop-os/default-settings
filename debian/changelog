@@ -1,3 +1,9 @@
+system76-default-settings (17.10.14) zesty; urgency=medium
+
+  * Add better volume and suspend button
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 05 Jun 2017 09:25:36 -0600
+
 system76-default-settings (17.10.13) zesty; urgency=medium
 
   * Fix grub theme depends

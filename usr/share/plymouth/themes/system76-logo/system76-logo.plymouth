@@ -1,8 +1,13 @@
 [Plymouth Theme]
 Name=System76 Logo
-Description=A theme that features an animated System76 logo.
-ModuleName=script
+Description=System76 Logo
+ModuleName=two-step
 
-[script]
+[two-step]
 ImageDir=/usr/share/plymouth/themes/system76-logo
-ScriptFile=/usr/share/plymouth/themes/system76-logo/system76-logo.script
+HorizontalAlignment=.5
+VerticalAlignment=.4
+Transition=merge-fade
+TransitionDuration=.5
+BackgroundStartColor=0x574f4a
+BackgroundEndColor=0x574f4a

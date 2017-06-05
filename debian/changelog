@@ -1,3 +1,9 @@
+system76-default-settings (17.10.15) zesty; urgency=medium
+
+  * Add throbber
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 05 Jun 2017 10:30:11 -0600
+
 system76-default-settings (17.10.14) zesty; urgency=medium
 
   * Add better volume and suspend button

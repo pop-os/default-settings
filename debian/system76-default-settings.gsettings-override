@@ -22,7 +22,7 @@ logo='/usr/share/plymouth/themes/system76-logo/system76_logo.png'
 
 [org.gnome.shell]
 enabled-extensions=['bettervolume@tudmotu.com', 'suspend-button@laserb', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['ubiquity.desktop', 'firefox.desktop', 'evolution.desktop', 'rhythmbox.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'yelp.desktop' ]
+favorite-apps=['ubiquity.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Software.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Weather.Application.desktop', 'gnome-control-center.desktop']
 app-picker-view=1
 
 [org.gnome.shell.extensions.user-theme]

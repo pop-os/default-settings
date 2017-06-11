@@ -1,3 +1,9 @@
+system76-default-settings (17.10.18) zesty; urgency=medium
+
+  * Readd logo file
+
+ -- Jeremy Soller <jeremy@system76.com>  Sun, 11 Jun 2017 11:00:19 -0600
+
 system76-default-settings (17.10.17) zesty; urgency=medium
 
   * Change favorite apps

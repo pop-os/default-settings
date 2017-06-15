@@ -6,7 +6,7 @@ ModuleName=two-step
 [two-step]
 ImageDir=/usr/share/plymouth/themes/system76-logo
 HorizontalAlignment=.5
-VerticalAlignment=.45
+VerticalAlignment=.5
 Transition=merge-fade
 TransitionDuration=.5
 BackgroundStartColor=0x574f4a

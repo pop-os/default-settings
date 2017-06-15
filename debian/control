@@ -10,6 +10,7 @@ Package: system76-default-settings
 Architecture: all
 Depends: ${misc:Depends},
          libglib2.0-bin,
+         gnome-shell-extensions,
          gnome-shell-extension-better-volume,
          gnome-shell-extension-suspend-button,
          system76-pop-theme,

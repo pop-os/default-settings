@@ -1,3 +1,9 @@
+system76-default-settings (17.10.19) zesty; urgency=medium
+
+  * Add gnome-shell-extensions
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 13 Jun 2017 15:33:26 -0600
+
 system76-default-settings (17.10.18) zesty; urgency=medium
 
   * Readd logo file

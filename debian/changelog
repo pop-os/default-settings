@@ -1,3 +1,9 @@
+system76-default-settings (17.10.20) zesty; urgency=medium
+
+  * Update Plymouth boot screen theme.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 15 Jun 2017 17:13:56 -0600
+
 system76-default-settings (17.10.19) zesty; urgency=medium
 
   * Add gnome-shell-extensions

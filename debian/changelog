@@ -1,3 +1,10 @@
+system76-default-settings (17.10.21) zesty; urgency=medium
+
+  * Darken plymouth background to blend seamlessly with GDM3.
+  * Fix bullet alignment to place them inside the entry.
+
+ -- Ian Santopietro <ian@system76.com>  Fri, 16 Jun 2017 10:28:06 -0600
+
 system76-default-settings (17.10.20) zesty; urgency=medium
 
   * Update Plymouth boot screen theme.

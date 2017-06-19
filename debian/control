@@ -7,7 +7,7 @@ Standards-Version: 3.9.8
 Homepage: https://github.com/system76/pop-default-settings
 
 Package: pop-default-settings
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends},
          libglib2.0-bin,
          gnome-shell-extensions,
@@ -28,7 +28,7 @@ Description: GRand Unified Bootloader, version 2 (pop theme)
  This is the default pop theme for GRUB's graphical menu.
 
 Package: plymouth-theme-pop-logo
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends}, plymouth, plymouth-label, plymouth-themes
 Provides: plymouth-theme
 Breaks: plymouth (<< 0.9.2-3ubuntu1~),
@@ -40,7 +40,7 @@ Description: graphical boot animation and logger - pop-logo theme
  This package contains the default pop-logo theme.
 
 Package: plymouth-theme-pop-text
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends}, plymouth, plymouth-theme-ubuntu-text
 Provides: plymouth-theme
 Replaces: plymouth (<< 0.8.1-1~)

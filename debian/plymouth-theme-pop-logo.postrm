@@ -30,7 +30,7 @@
 case "$1" in
     remove)
 	update-alternatives \
-		--remove default.plymouth /usr/share/plymouth/themes/system76-logo/system76-logo.plymouth
+		--remove default.plymouth /usr/share/plymouth/themes/pop-logo/pop-logo.plymouth
 
 	if which update-initramfs >/dev/null 2>&1
 	then

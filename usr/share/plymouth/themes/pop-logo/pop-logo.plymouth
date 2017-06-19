@@ -1,10 +1,10 @@
 [Plymouth Theme]
-Name=System76 Logo
-Description=System76 Logo
+Name=Pop Logo
+Description=Pop Logo
 ModuleName=two-step
 
 [two-step]
-ImageDir=/usr/share/plymouth/themes/system76-logo
+ImageDir=/usr/share/plymouth/themes/pop-logo
 HorizontalAlignment=.5
 VerticalAlignment=.5
 Transition=merge-fade

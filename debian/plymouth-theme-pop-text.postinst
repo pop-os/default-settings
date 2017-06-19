@@ -21,7 +21,7 @@ case "$1" in
 	if [ "$1" = "configure" ]; then
 		# We remove leftover generated file from previous plymouth version. Can be removed on xenial+1
 		if dpkg --compare-versions "$2" le-nl "16.04.1~"; then
-	    		rm -f /lib/plymouth/themes/system76-text/system76-text.plymouth
+	    		rm -f /lib/plymouth/themes/pop-text/pop-text.plymouth
 		fi
 	fi
 	# we keep that rmdir unconditional as we want to ensure that the dir is
@@ -32,12 +32,12 @@ case "$1" in
 	sed -re \
 		"/\[ubuntu-text\]/ {
 			N;
-			s/(title=System76 ).*\$/\1$(lsb_release -rs)/
-		}" /usr/share/plymouth/themes/system76-text/system76-text.plymouth.in \
-			> /usr/share/plymouth/themes/system76-text/system76-text.plymouth
+			s/(title=Pop!_OS).*\$/\1$(lsb_release -rs)/
+		}" /usr/share/plymouth/themes/pop-text/pop-text.plymouth.in \
+			> /usr/share/plymouth/themes/pop-text/pop-text.plymouth
 	update-alternatives \
 		--install /usr/share/plymouth/themes/text.plymouth text.plymouth \
-		/usr/share/plymouth/themes/system76-text/system76-text.plymouth 70
+		/usr/share/plymouth/themes/pop-text/pop-text.plymouth 70
 
 	if which update-initramfs >/dev/null 2>&1
 	then

@@ -1,4 +1,4 @@
-# GRUB2 gfxmenu System76 theme, based on Linux Vimix theme
+# GRUB2 gfxmenu pop theme, based on Linux Vimix theme
 # Designed for any resolution
 
 # Global Property
@@ -11,7 +11,7 @@ desktop-color: "#574F4A"
 + image {
 	left = 50%-190
 	top = 50%-53
-    file = "system76_logo.png"
+    file = "logo.png"
 }
 
 # Show the boot menu

@@ -1,491 +1,120 @@
-system76-default-settings (17.10.21) zesty; urgency=medium
+pop-default-settings (1.0.19) zesty; urgency=medium
+
+  * Rename to pop-default-settings
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 19 Jun 2017 12:00:34 -0600
+
+pop-default-settings (1.0.18) zesty; urgency=medium
 
   * Darken plymouth background to blend seamlessly with GDM3.
   * Fix bullet alignment to place them inside the entry.
 
  -- Ian Santopietro <ian@system76.com>  Fri, 16 Jun 2017 10:28:06 -0600
 
-system76-default-settings (17.10.20) zesty; urgency=medium
+pop-default-settings (1.0.17) zesty; urgency=medium
 
   * Update Plymouth boot screen theme.
 
  -- Ian Santopietro <ian@system76.com>  Thu, 15 Jun 2017 17:13:56 -0600
 
-system76-default-settings (17.10.19) zesty; urgency=medium
+pop-default-settings (1.0.16) zesty; urgency=medium
 
   * Add gnome-shell-extensions
 
  -- Jeremy Soller <jeremy@system76.com>  Tue, 13 Jun 2017 15:33:26 -0600
 
-system76-default-settings (17.10.18) zesty; urgency=medium
+pop-default-settings (1.0.15) zesty; urgency=medium
 
   * Readd logo file
 
  -- Jeremy Soller <jeremy@system76.com>  Sun, 11 Jun 2017 11:00:19 -0600
 
-system76-default-settings (17.10.17) zesty; urgency=medium
+pop-default-settings (1.0.14) zesty; urgency=medium
 
   * Change favorite apps
 
  -- Jeremy Soller <jeremy@system76.com>  Fri, 09 Jun 2017 11:13:02 -0600
 
-system76-default-settings (17.10.16) zesty; urgency=medium
+pop-default-settings (1.0.13) zesty; urgency=medium
 
   * Remove terminal box
 
  -- Jeremy Soller <jeremy@system76.com>  Mon, 05 Jun 2017 16:52:49 -0600
 
-system76-default-settings (17.10.15) zesty; urgency=medium
+pop-default-settings (1.0.12) zesty; urgency=medium
 
   * Add throbber
 
  -- Jeremy Soller <jeremy@system76.com>  Mon, 05 Jun 2017 10:30:11 -0600
 
-system76-default-settings (17.10.14) zesty; urgency=medium
+pop-default-settings (1.0.11) zesty; urgency=medium
 
   * Add better volume and suspend button
 
  -- Jeremy Soller <jeremy@system76.com>  Mon, 05 Jun 2017 09:25:36 -0600
 
-system76-default-settings (17.10.13) zesty; urgency=medium
+pop-default-settings (1.0.10) zesty; urgency=medium
 
   * Fix grub theme depends
 
  -- Jeremy Soller <jeremy@system76.com>  Thu, 01 Jun 2017 16:06:41 -0600
 
-system76-default-settings (17.10.12) zesty; urgency=medium
+pop-default-settings (1.0.9) zesty; urgency=medium
 
   * Add grub theme
 
  -- Jeremy Soller <jeremy@system76.com>  Thu, 01 Jun 2017 10:56:15 -0600
 
-system76-default-settings (17.10.10) zesty; urgency=medium
+pop-default-settings (1.0.8) zesty; urgency=medium
 
   * Fixes for plymouth
 
  -- Jeremy Soller <jeremy@system76.com>  Thu, 01 Jun 2017 10:14:00 -0600
 
-system76-default-settings (17.10.9) zesty; urgency=medium
+pop-default-settings (1.0.7) zesty; urgency=medium
 
   * Significant changes by isantop for plymouth theme
 
  -- Jeremy Soller <jeremy@system76.com>  Thu, 11 May 2017 09:45:05 -0600
 
-system76-default-settings (17.10.8) zesty; urgency=medium
+pop-default-settings (1.0.6) zesty; urgency=medium
 
   * Enable shell theme
 
  -- Jeremy Soller <jeremy@system76.com>  Wed, 10 May 2017 12:43:42 -0600
 
-system76-default-settings (17.10.7) zesty; urgency=medium
+pop-default-settings (1.0.5) zesty; urgency=medium
 
   * Update logos
 
  -- Jeremy Soller <jeremy@system76.com>  Wed, 10 May 2017 10:26:44 -0600
 
-system76-default-settings (17.10.6) zesty; urgency=medium
+pop-default-settings (1.0.4) zesty; urgency=medium
 
   * Remove debian/60-gnome.conf to avoid conflict with ubuntu-gnome-settings
 
  -- Jeremy Soller <jeremy@system76.com>  Tue, 09 May 2017 19:00:04 -0600
 
-system76-default-settings (17.10.5) zesty; urgency=medium
+pop-default-settings (1.0.3) zesty; urgency=medium
 
   * Change images
 
  -- Jeremy Soller <jeremy@system76.com>  Tue, 09 May 2017 16:37:33 -0600
 
-system76-default-settings (17.10.4) zesty; urgency=medium
+pop-default-settings (1.0.2) zesty; urgency=medium
 
   * Fix plymouth script
 
  -- Jeremy Soller <jeremy@system76.com>  Tue, 09 May 2017 16:32:30 -0600
 
-system76-default-settings (17.10.3) zesty; urgency=medium
+pop-default-settings (1.0.1) zesty; urgency=medium
 
   * Depend on pop theme
 
  -- Jeremy Soller <jeremy@system76.com>  Tue, 09 May 2017 15:59:37 -0600
 
-system76-default-settings (17.10.2) zesty; urgency=medium
+pop-default-settings (1.0.0) zesty; urgency=medium
 
-  * Convert to System76 default settings
+  * First release
 
  -- Jeremy Soller <jeremy@system76.com>  Tue, 09 May 2017 15:41:26 -0600
-
-system76-default-settings (17.10.1) zesty; urgency=medium
-
-  * Drop obsolete nautilus sort-directories-first override.
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Sat, 29 Apr 2017 12:37:50 -0400
-
-system76-default-settings (17.10.0) zesty; urgency=medium
-
-  * Drop obsolete nautilus enable-interactive-search override
-    (LP: #1502183)
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Sat, 29 Apr 2017 12:20:36 -0400
-
-system76-default-settings (17.04.3) zesty; urgency=medium
-
-  * Use defaultPref instead of pref to allow users to change the
-    Firefox homepage (LP: #1605887)
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 10 Apr 2017 05:50:30 -0400
-
-system76-default-settings (17.04.2) zesty; urgency=medium
-
-  * Disable nautilus interactive-search by default. This matches our 16.04
-    default. interactive-search is expected to be removed from nautilus
-    in 17.10 anyway.
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Sun, 02 Apr 2017 14:00:45 -0400
-
-system76-default-settings (17.04.1) zesty; urgency=medium
-
-  * Set Firefox homepage back to Mozilla's default about:home
-    (LP: #1671626)
-  * Add defaults for Onboard (onscreen keyboard). Diff from ubuntu-settings:
-    - Set default font to Cantarell, the GNOME default font
-    - Don't set Win key label to the Ubuntu logo since that only
-      works with the Ubuntu font
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 09 Mar 2017 21:06:15 -0500
-
-system76-default-settings (17.04.0) zesty; urgency=medium
-
-  * Update search engine overrides for epiphany-browser 3.23.91
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 27 Feb 2017 23:18:01 -0500
-
-system76-default-settings (16.10.5) yakkety; urgency=medium
-
-  * Stop hiding 'Additional Drivers' because the software-properties
-    package itself hides it in GNOME now
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Wed, 28 Sep 2016 05:40:27 -0400
-
-system76-default-settings (16.10.4) yakkety; urgency=medium
-
-  * Recommend system76-wallpapers instead of -xenial package
-  * Move abstract-lock-screen.jpg here from system76-wallpapers-
-    xenial and set Breaks/Replaces accordingly
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 08 Sep 2016 01:18:16 -0400
-
-system76-default-settings (16.10.3) yakkety; urgency=medium
-
-  * Hide texdoctk (see Debian bug 836641) and Additional Drivers from
-    the Activities Overview. Additional Drivers needs a better icon
-    and is accessible from "Software & Updates" any way.
-  * system76-default-settings.gsettings-override:
-    - Merge with ubuntu-settings
-    - Add Software and replace LibreOffice Writer in GNOME Shell favorites
-    - Set Files (nautilus) default zoom to 'standard'
-    - Update Web (Epiphany)'s default search URL (still Google)
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 06 Sep 2016 23:30:06 -0400
-
-system76-default-settings (16.10.2) yakkety; urgency=medium
-
-  * Adapt to new ImageMagick .desktop filenames to properly hide them from
-    the Activities Overview (LP: #1615435)
-  * Drop ubufox overrides. Since ubufox is distributed as a Mozilla-signed
-    packed xpi, we can't override the Firefox homepage like we used to.
-  * Drop debian/system76-default-settings.maintscript:
-    - These migrations were completed in Ubuntu 14.04 LTS
-  * Drop debian/bzr-builddeb.conf: No need to tell bzr-builddeb to use
-    native mode because it does this automatically
-  * Bump dh compat to 10
-  * Bump Standards-Version to 3.9.8
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Sun, 21 Aug 2016 18:04:27 -0400
-
-system76-default-settings (16.10.1) yakkety; urgency=medium
-
-  * Synchronize plymouth-theme-system76-text postinst with the postinst
-    from plymouth-theme-ubuntu-text to fix erroneous output (LP: #1597466)
-  * Append a VERSION string to plymouth-theme-system76-text's title to
-    give the regex something to anchor on and correctly append the version.
-
- -- Adam Conrad <adconrad@ubuntu.com>  Tue, 05 Jul 2016 02:13:40 -0600
-
-system76-default-settings (16.04.4) xenial; urgency=medium
-
-  [ Alfredo Hernández ]
-  * Update default lockscreen wallpaper to use abstract-lock-screen
-    from Google Code-in entries
-
- -- Tim Lunn <tim@feathertop.org>  Mon, 14 Mar 2016 14:20:54 +1100
-
-system76-default-settings (16.04.3) xenial; urgency=medium
-
-  * system76-logo.plymouth: update theme path to /usr/share/plymouth
-    (LP: #1549623)
-
- -- Tim Lunn <tim@feathertop.org>  Thu, 25 Feb 2016 18:24:47 +1100
-
-system76-default-settings (16.04.2) xenial; urgency=medium
-
-  * debian/plymouth-theme-system76-text.postinst:
-    - take the case of bootstrapping as well where /lib/plymouth didn't exist
-
- -- Didier Roche <didrocks@ubuntu.com>  Thu, 10 Dec 2015 17:12:12 +0100
-
-system76-default-settings (16.04.1) xenial; urgency=medium
-
-  * Transition with new plymouth from /lib to /usr/share:
-    - replace /lib instances by /usr/share
-    - breaks against older plymouth.
-    - ensure we can transition the alternatives to the new version
-  * Change as well gsettings logo value to point to new location.
-
- -- Didier Roche <didrocks@ubuntu.com>  Wed, 09 Dec 2015 08:34:37 +0100
-
-system76-default-settings (15.10.5) wily; urgency=medium
-
-  [ Robert Ancell ]
-  * Use [Seat:*] section for LightDM configuration instead of
-    deprecated [SeatDefaults]
-
- -- Tim Lunn <tim@feathertop.org>  Tue, 06 Oct 2015 20:23:23 +1100
-
-system76-default-settings (15.10.4) wily; urgency=medium
-
-  * Update default backgrounds for 15.10
-
- -- Tim Lunn <tim@feathertop.org>  Tue, 06 Oct 2015 20:22:55 +1100
-
-system76-default-settings (15.10.3) wily; urgency=medium
-
-  * fix positioning of messages/password prompt in plymouth (LP: #1491441)
-
- -- Tim Lunn <tim@feathertop.org>  Mon, 07 Sep 2015 09:36:30 +1000
-
-system76-default-settings (15.10.2) wily; urgency=medium
-
-  * Drop Shotwell from the panel and replace with gnome-photos.
-
- -- Bruce Pieterse <dev@otq.za.net>  Thu, 03 Sep 2015 22:40:59 +0200
-
-system76-default-settings (15.10.1) wily; urgency=medium
-
-  * Update Artwork for 15.10
-    - Rework plymouth theme
-    - Default Backgrounds
-    - Update Logo
-
- -- Tim Lunn <tim@feathertop.org>  Sun, 30 Aug 2015 15:35:48 +1000
-
-system76-default-settings (15.10.0) wily; urgency=medium
-
-  * Drop invalid override key 'external-editor' for eog.ui (LP: #1479986)
-
- -- Bruce Pieterse <dev@otq.za.net>  Sat, 08 Aug 2015 15:39:05 +0200
-
-system76-default-settings (15.04.5) vivid; urgency=medium
-
-  * Add override for locksreen background uri
-
- -- Tim Lunn <tim@feathertop.org>  Wed, 11 Mar 2015 08:45:00 +1100
-
-system76-default-settings (15.04.3) vivid; urgency=medium
-
-  * Add fsck report and cancel support with systemd to the logo theme
-    (LP: #1425434)
-
- -- Didier Roche <didrocks@ubuntu.com>  Wed, 25 Feb 2015 10:14:50 +0100
-
-system76-default-settings (15.04.2) vivid; urgency=medium
-
-  * Update uri for default Adwaita background (LP: #1411990)
-
- -- Tim Lunn <tim@feathertop.org>  Sun, 18 Jan 2015 07:20:27 +1100
-
-system76-default-settings (15.04.1) vivid; urgency=medium
-
-  * Use Adwaita icon theme for Gtk+ 3.14
-
- -- Tim Lunn <tim@feathertop.org>  Sat, 20 Dec 2014 08:23:29 +1100
-
-system76-default-settings (15.04.0) vivid; urgency=medium
-
-  * Revert button-layout override to upstream default
-  * Fix bogus Vcs branch
-
- -- Tim Lunn <tim@feathertop.org>  Mon, 10 Nov 2014 09:13:34 +1100
-
-system76-default-settings (14.04.1) trusty; urgency=medium
-
-  * Change default background to Adwaita-timed
-
- -- Tim Lunn <tim@feathertop.org>  Fri, 14 Mar 2014 14:47:23 +1100
-
-system76-default-settings (14.04.0) trusty; urgency=medium
-
-  * debian/60-gnome.conf:
-  * debian/system76-default-settings.install:
-  * debian/system76-default-settings.maintscript:
-    - Move 20-gnome.conf from /etc to /usr/share and rename it to
-      60-gnome.conf to have higher priority than 50-ubuntu.conf
-
- -- Robert Ancell <robert.ancell@canonical.com>  Wed, 05 Feb 2014 10:45:21 +0000
-
-system76-default-settings (13.10.11) saucy; urgency=low
-
-  * Update text colours in plymouth theme to avoid contrast issue
-
- -- Tim Lunn <tim@feathertop.org>  Wed, 11 Sep 2013 23:46:42 +1000
-
-system76-default-settings (13.10.10) saucy; urgency=low
-
-  * Actually drop idle-dim-time override
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 09 Sep 2013 23:25:13 -0400
-
-system76-default-settings (13.10.9) saucy; urgency=low
-
-  * Drop idle-dim-time override no longer needed with gnome-settings-daemon
-    3.8 (LP: #1168838)
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 09 Sep 2013 21:52:23 -0400
-
-system76-default-settings (13.10.8) saucy; urgency=low
-
-  [ Tim Lunn ]
-  * clean up gsettings override, we don't use g-s-d background plugin now
-  * Change default background to FootFall
-
- -- Evan Dandrea <ev@ubuntu.com>  Tue, 03 Sep 2013 12:52:45 +0100
-
-system76-default-settings (13.10.7) saucy; urgency=low
-
-  * Update to new plymouth theme, Thanks Alfredo Hernández
-  * Add noise texture to plymouth theme
-  * Revert renaming of plymouth text theme moduleName to fix text theme
-  * Use Ubuntu GNOME logo for gdm
-
- -- Tim Lunn <tim@feathertop.org>  Thu, 29 Aug 2013 12:29:17 +1000
-
-system76-default-settings (13.10.6) saucy; urgency=low
-
-  * Adjust GNOME Shell "favorites" for ubiquity.desktop rename
-  * debian/20-gnome.conf, debian/system76-default-settings.postinst,
-    debian/system76-default-settings.postrm:
-    - Use new lightdm.conf.d/ method to set the default login session
-      instead of lightdm-set-defaults
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Fri, 02 Aug 2013 10:02:10 -0400
-
-system76-default-settings (13.10.5) saucy; urgency=low
-
-  [ Tim Lunn ]
-  * Override ubufox homepage setting and use about:home instead of
-    about:startpage (LP: #1195367).
-
-  [ Jeremy Bicha ]
-  * Undo the changes from 13.10.1 since we're setting the Firefox
-    homepage a different way
-
- -- Tim Lunn <tim@feathertop.org>  Tue, 23 Jul 2013 11:41:31 +1000
-
-system76-default-settings (13.10.4) saucy; urgency=low
-
-  * Undo change from 13.10.2 to explicitly hide Hibernate from
-    user menu now that gnome-shell-extensions is fixed
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Sun, 21 Jul 2013 18:57:54 -0400
-
-system76-default-settings (13.10.3) saucy; urgency=low
-
-  * Copy change from ubuntu-settings to add zeitgiest to gedit's
-    default plugins
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Wed, 26 Jun 2013 16:37:12 -0400
-
-system76-default-settings (13.10.2) saucy; urgency=low
-
-  * Don't show Hibernate in user menu since hibernate is disabled
-    by default in Ubuntu (LP: #1191181)
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 25 Jun 2013 13:21:57 -0400
-
-system76-default-settings (13.10.1) saucy; urgency=low
-
-  * Use ubuntu-defaults-builder to set Firefox homepage to upstream
-    default
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 25 Jun 2013 08:51:22 -0400
-
-system76-default-settings (13.10.0) saucy; urgency=low
-
-  * Drop gdm fallback logo since gdm fallback mode is gone
-  * Re-activate rhythmbox's 'artsearch' by default (merged from
-    ubuntu-settings)
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 06 Jun 2013 10:59:37 -0400
-
-system76-default-settings (13.04.3) raring; urgency=low
-
-  * Set the Installer as a favorite in GNOME Shell's Activities
-    Overview. This fixes a regression caused by 13.04.1. (LP: #1171789)
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 23 Apr 2013 10:55:41 -0400
-
-system76-default-settings (13.04.2) raring; urgency=low
-
-  * Disable the Ubuntu overlay scrollbars since they cause black backgrounds
-    in some GTK+ widgets with the Adwaita theme (LP: #1167079, #1102096)
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Sun, 21 Apr 2013 20:31:22 -0400
-
-system76-default-settings (13.04.1) raring; urgency=low
-
-  * Since Firefox is our default browser, set it as a default "favorite"
-    in GNOME Shell's Activities Overview instead of GNOME Web. This matches
-    the default GNOME Shell behavior in Ubuntu 12.04 LTS.
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Sat, 06 Apr 2013 12:41:03 -0400
-
-system76-default-settings (13.04.0) raring; urgency=low
-
-  * Copy settings from ubuntu-settings and explicitly override
-    back to GNOME defaults. This is much better than recommending
-    users uninstall ubuntu-settings which is a required dependency
-    of ubuntu-desktop.
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 19 Feb 2013 20:46:26 -0500
-
-system76-default-settings (12.10.3) quantal; urgency=low
-
-  [ Tim Lunn ]
-  * Add ubuntu logo to gdm greeter screen.
-
-  [ Everaldo Canuto ]
-  * Fix missing password prompt for encrypted partitions (LP: #1060123)
-  * Hide xterm, uxterm, and imagemagick from applications overview
-    (LP: #129041)
-
- -- Tim Lunn <tim@feathertop.org>  Thu, 04 Oct 2012 07:44:18 +1000
-
-system76-default-settings (12.10.2) quantal; urgency=low
-
-  * Add plymouth theme (LP: #1058434)
-
- -- Everaldo Canuto <everaldo.canuto@gmail.com>  Sat, 29 Sep 2012 00:33:02 -0300
-
-system76-default-settings (12.10.1) quantal; urgency=low
-
-  * Copy Ubuntu override for Alt as mouse-button-modifier
-  * Drop nautilus, gnome-session, totem, and org.gnome.background overrides
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 11 Sep 2012 23:29:14 -0400
-
-system76-default-settings (12.10.0) quantal; urgency=low
-
-  * Initial release. (LP #1043610)
-    - Copy some Ubuntu settings
-    - Use GNOME default background
-    - Use GNOME session as default login session
-
- -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 30 Aug 2012 17:01:33 -0400

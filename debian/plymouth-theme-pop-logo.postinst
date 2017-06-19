@@ -20,9 +20,9 @@ case "$1" in
     configure)
 	update-alternatives \
 		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
-		/usr/share/plymouth/themes/system76-logo/system76-logo.plymouth 160 \
+		/usr/share/plymouth/themes/pop-logo/pop-logo.plymouth 160 \
 		--slave /usr/share/plymouth/themes/default.grub default.plymouth.grub \
-		/usr/share/plymouth/themes/system76-logo/system76-logo.grub
+		/usr/share/plymouth/themes/pop-logo/pop-logo.grub
 
 	if which update-initramfs >/dev/null 2>&1
 	then

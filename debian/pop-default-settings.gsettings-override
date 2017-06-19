@@ -18,7 +18,7 @@ theme="Pop"
 titlebar-font='Fira Sans Semi-Bold 10'
 
 [org.gnome.login-screen]
-logo='/usr/share/grub/themes/pop/logo.png'
+logo='/usr/share/pop-default-settings/logo.png'
 
 [org.gnome.shell]
 enabled-extensions=['bettervolume@tudmotu.com', 'suspend-button@laserb', 'user-theme@gnome-shell-extensions.gcampax.github.com']

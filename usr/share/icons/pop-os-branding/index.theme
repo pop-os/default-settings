@@ -1,7 +1,6 @@
 [Icon Theme]
 Name=pop-os-branding
 Comment=Pop!_OS branding images.
-Inherits=hicolor
 Hidden=true
 
 Directories=round-logos/16,round-logos/22,round-logos/24,round-logos/32,round-logos/48,round-logos/64

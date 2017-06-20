@@ -1,3 +1,9 @@
+pop-default-settings (1.0.24) zesty; urgency=medium
+
+  * Install new OEM info file.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 20 Jun 2017 14:19:55 -0600
+
 pop-default-settings (1.0.23) zesty; urgency=medium
 
   * Fix bug with incorrectly named folder.

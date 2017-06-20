@@ -18,7 +18,10 @@ theme="Pop"
 titlebar-font='Fira Sans Semi-Bold 10'
 
 [org.gnome.login-screen]
-logo='/usr/share/pop-default-settings/logo.png'
+logo='/usr/share/icons/pop-os-branding/pop_icon.png'
+
+[org.gnome.settings-daemon.plugins.xsettings]
+overrides={'Gtk/ShellShowsAppMenu': <0>}
 
 [org.gnome.shell]
 enabled-extensions=['bettervolume@tudmotu.com', 'suspend-button@laserb', 'user-theme@gnome-shell-extensions.gcampax.github.com']

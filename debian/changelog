@@ -1,3 +1,10 @@
+pop-default-settings (1.0.22) zesty; urgency=medium
+
+  * Update OS distributor locations
+  * Set up hidden icon theme for OS branding.
+
+ -- Ian Santopietro <ian@system76.com>  Tue, 20 Jun 2017 12:04:20 -0600
+
 pop-default-settings (1.0.21) zesty; urgency=medium
 
   * Update conflicts

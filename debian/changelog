@@ -1,3 +1,9 @@
+pop-default-settings (1.0.30) zesty; urgency=medium
+
+  * Go back to two-step, until three-step is ready
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 21 Jun 2017 16:26:24 -0600
+
 pop-default-settings (1.0.29) zesty; urgency=medium
 
   * Add single image end animation

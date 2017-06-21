@@ -1,3 +1,9 @@
+pop-default-settings (1.0.28) zesty; urgency=medium
+
+  * Update grub theme
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 21 Jun 2017 14:57:45 -0600
+
 pop-default-settings (1.0.27) zesty; urgency=medium
 
   * Change plymouth logos to Pop

@@ -9,8 +9,8 @@ desktop-color: "#574F4A"
 
 # Logo image
 + image {
-	left = 50%-190
-	top = 50%-53
+	left = 50%-50
+	top = 50%-50
     file = "logo.png"
 }
 

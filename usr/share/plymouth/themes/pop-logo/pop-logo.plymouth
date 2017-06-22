@@ -1,9 +1,9 @@
 [Plymouth Theme]
 Name=Pop Logo
 Description=Pop Logo
-ModuleName=two-step
+ModuleName=three-step
 
-[two-step]
+[three-step]
 ImageDir=/usr/share/plymouth/themes/pop-logo
 HorizontalAlignment=.5
 VerticalAlignment=.5

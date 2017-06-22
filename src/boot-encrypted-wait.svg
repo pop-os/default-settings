@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="484.66772"
-     inkscape:cy="761.00078"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="350.09169"
+     inkscape:cy="790.05882"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g952"
      inkscape:document-rotation="0"
      showgrid="true"
      units="px"
@@ -210,12 +210,12 @@
         <rect
            id="rect950"
            style="fill:#ffffff"
-           ry="37.84"
+           ry="37.839996"
            rx="37.84"
-           height="75.68"
+           height="75.679993"
            width="496.64999"
-           y="726"
-           x="223" />
+           y="724.69"
+           x="222.31007" />
       </g>
       <path
          inkscape:connector-curvature="0"

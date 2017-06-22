@@ -1,3 +1,9 @@
+pop-default-settings (1.0.31) zesty; urgency=medium
+
+  * Use optimized images that run correctly.
+
+ -- Ian Santopietro <ian@system76.com>  Thu, 22 Jun 2017 08:57:15 -0600
+
 pop-default-settings (1.0.30) zesty; urgency=medium
 
   * Go back to two-step, until three-step is ready

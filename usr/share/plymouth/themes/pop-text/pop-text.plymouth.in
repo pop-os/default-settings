@@ -6,6 +6,6 @@ ModuleName=ubuntu-text
 [ubuntu-text]
 title=Pop!_OS VERSION
 black=0x574f4a
-white=0xffffff
-brown=0x0087ed
-blue=0x133773
+white=0xf6f6f6
+brown=0x48b9c7
+blue=0x48b9c7

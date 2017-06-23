@@ -6,6 +6,12 @@ title-text: ""
 desktop-image: "background.png"
 desktop-image-scale-method: "stretch"
 desktop-color: "#574F4A"
+terminal-font: "Unifont Regular 16"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
 
 # Logo image
 + image {
@@ -20,6 +26,7 @@ desktop-color: "#574F4A"
   top = 60%
   width = 480
   height = 30%
+  item_font = "Unifont Regular 16"
   item_color = "#f6f6f6"
   selected_item_color = "#f6f6f6"
   item_height = 32

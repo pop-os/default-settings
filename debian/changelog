@@ -1,3 +1,9 @@
+pop-default-settings (1.0.33) zesty; urgency=medium
+
+  * Prevent removal of PPA
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 23 Jun 2017 12:35:32 -0600
+
 pop-default-settings (1.0.32) zesty; urgency=medium
 
   * Rebuild with correct Gsettings.

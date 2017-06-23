@@ -9,9 +9,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="Layer_1"
    data-name="Layer 1"
-   width="300"
-   height="300"
-   viewBox="0 0 300 300"
+   width="250"
+   height="250"
+   viewBox="0 0 250 250"
    version="1.1"
    sodipodi:docname="Pop_icon.svg"
    inkscape:version="0.92+devel unknown">
@@ -43,26 +43,28 @@
      inkscape:window-height="1376"
      id="namedview965"
      showgrid="true"
-     fit-margin-top="50"
-     fit-margin-left="50"
-     fit-margin-right="50"
-     fit-margin-bottom="50"
-     inkscape:zoom="8"
-     inkscape:cx="158.01806"
-     inkscape:cy="97.906562"
+     fit-margin-top="25"
+     fit-margin-left="25"
+     fit-margin-right="25"
+     fit-margin-bottom="25"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="113.19826"
+     inkscape:cy="93.904334"
      inkscape:window-x="0"
      inkscape:window-y="31"
      inkscape:window-maximized="1"
      inkscape:current-layer="g952">
     <inkscape:grid
        type="xygrid"
-       id="grid820" />
+       id="grid820"
+       originx="-25"
+       originy="-25" />
   </sodipodi:namedview>
   <title
      id="title946">Pop_icon</title>
   <g
      id="g962"
-     transform="matrix(0.21141649,0,0,0.21141649,50,49.788584)">
+     transform="matrix(0.21141649,0,0,0.21141649,25,24.788584)">
     <g
        id="g952">
       <circle

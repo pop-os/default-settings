@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Jeremy Soller <jeremy@system76.com>
 Uploaders: Ian Santopietro <ian@system76.com>
-Build-Depends: debhelper (>= 10)
+Build-Depends: debhelper (>= 10), imagemagick
 Standards-Version: 3.9.8
 Homepage: https://github.com/system76/pop-default-settings
 

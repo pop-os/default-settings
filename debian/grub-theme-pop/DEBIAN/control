@@ -1,0 +1,14 @@
+Package: grub-theme-pop
+Source: pop-default-settings
+Version: 1.0.38
+Architecture: amd64
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 2403
+Depends: grub-common
+Conflicts: grub-theme-system76
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/system76/pop-default-settings
+Description: GRand Unified Bootloader, version 2 (pop theme)
+ This is the default pop theme for GRUB's graphical menu.

@@ -1,0 +1,19 @@
+Package: plymouth-theme-pop-logo
+Source: pop-default-settings
+Version: 1.0.38
+Architecture: amd64
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 340
+Depends: plymouth, plymouth-label, plymouth-themes
+Conflicts: plymouth-theme-system76-logo
+Breaks: plymouth (<< 0.9.2-3ubuntu1~)
+Provides: plymouth-theme
+Section: x11
+Priority: optional
+Homepage: https://github.com/system76/pop-default-settings
+Description: graphical boot animation and logger - pop-logo theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the default pop-logo theme.

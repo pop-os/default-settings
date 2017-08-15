@@ -44,3 +44,6 @@ bold-color='rgb(115,196,143)'
 background-color='rgb(87,79,74)'
 highlight-background-color='rgb(72,185,199)'
 highlight-foreground-color='rgb(255,255,255)'
+
+[org.gnome.settings-daemon.plugins.xsettings]
+antialiasing='grayscale'

@@ -28,6 +28,17 @@ app-picker-view=1
 [org.gnome.shell.extensions.user-theme]
 name='Pop'
 
+[org.gnome.settings-daemon.plugins.xsettings]
+antialiasing='grayscale'
+
+[org.gnome.nautilus.desktop]
+home-icon-visible=false
+trash-icon-visible=false
+volumes-visible=false
+
+[org.gnome.nautilus.icon-view]
+default-zoom-level='standard'
+
 [org.gnome.Terminal.Legacy.Profile]
 foreground-color='rgb(242,242,242)'
 visible-name='Pop'
@@ -44,6 +55,3 @@ bold-color='rgb(115,196,143)'
 background-color='rgb(87,79,74)'
 highlight-background-color='rgb(72,185,199)'
 highlight-foreground-color='rgb(255,255,255)'
-
-[org.gnome.settings-daemon.plugins.xsettings]
-antialiasing='grayscale'

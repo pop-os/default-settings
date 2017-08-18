@@ -1,3 +1,9 @@
+pop-default-settings (1.0.42) zesty; urgency=medium
+
+  * Add nautilus default settings
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 18 Aug 2017 14:56:23 -0600
+
 pop-default-settings (1.0.41) zesty; urgency=medium
 
   * Improve default font rendering settings to prevent text looking muddy.

@@ -40,18 +40,19 @@ volumes-visible=false
 default-zoom-level='standard'
 
 [org.gnome.Terminal.Legacy.Profile]
-foreground-color='rgb(242,242,242)'
 visible-name='Pop'
-palette=['rgb(51,51,51)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(136,128,124)', 'rgb(241,93,34)', 'rgb(115,196,143)', 'rgb(255,206,81)', 'rgb(72,185,199)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
-cursor-background-color='rgb(246,246,246)'
 use-system-font=false
-cursor-colors-set=true
-highlight-colors-set=true
-use-theme-colors=false
 font='Fira Mono 12'
-cursor-foreground-color='rgb(73,185,199)'
+use-theme-colors=false
+background-color='rgb(87,79,74)'
+foreground-color='rgb(242,242,242)'
 bold-color-same-as-fg=true
 bold-color='rgb(115,196,143)'
-background-color='rgb(87,79,74)'
+cursor-colors-set=true
+cursor-background-color='rgb(246,246,246)'
+cursor-foreground-color='rgb(73,185,199)'
+highlight-colors-set=true
 highlight-background-color='rgb(72,185,199)'
 highlight-foreground-color='rgb(255,255,255)'
+palette=['rgb(51,51,51)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(136,128,124)', 'rgb(241,93,34)', 'rgb(115,196,143)', 'rgb(255,206,81)', 'rgb(72,185,199)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+audible-bell=false

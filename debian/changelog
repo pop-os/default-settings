@@ -1,3 +1,9 @@
+pop-default-settings (1.0.43) zesty; urgency=medium
+
+  * Disable terminal bell
+
+ -- Jeremy Soller <jackpot51@gmail.com>  Sat, 19 Aug 2017 15:54:41 -0600
+
 pop-default-settings (1.0.42) zesty; urgency=medium
 
   * Add nautilus default settings

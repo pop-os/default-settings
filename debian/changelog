@@ -1,3 +1,9 @@
+pop-default-settings (1.1.4) artful; urgency=medium
+
+  * Reenable user-theme
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 06 Sep 2017 14:15:53 -0600
+
 pop-default-settings (1.1.3) artful; urgency=medium
 
   * Remove extensions from enabled-extensions

@@ -11,9 +11,6 @@ Package: pop-default-settings
 Architecture: any
 Depends: ${misc:Depends},
          libglib2.0-bin,
-         gnome-shell-extensions,
-         gnome-shell-extension-better-volume,
-         gnome-shell-extension-suspend-button,
          pop-theme,
 Conflicts: system76-pop-default-settings
 Recommends: system76-wallpapers

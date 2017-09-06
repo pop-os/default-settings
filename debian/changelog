@@ -1,3 +1,10 @@
+pop-default-settings (1.1.3) artful; urgency=medium
+
+  * Remove extensions from enabled-extensions
+  * Remove ubiquity.desktop
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 06 Sep 2017 13:47:13 -0600
+
 pop-default-settings (1.1.2) artful; urgency=medium
 
   * Remove gnome shell extensions, to be done in another package

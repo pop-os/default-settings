@@ -21,8 +21,8 @@ titlebar-font='Fira Sans Semi-Bold 10'
 logo='/usr/share/icons/pop-os-branding/pop_icon.svg'
 
 [org.gnome.shell]
-enabled-extensions=['bettervolume@tudmotu.com', 'suspend-button@laserb', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['ubiquity.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']
+enabled-extensions=[]
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']
 app-picker-view=1
 
 [org.gnome.shell.extensions.user-theme]

@@ -1,3 +1,9 @@
+pop-default-settings (1.1.6) artful; urgency=medium
+
+  * Add pop-session
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 06 Sep 2017 16:04:54 -0600
+
 pop-default-settings (1.1.5) artful; urgency=medium
 
   * Remove user-theme again, after finding the "right way" to theme artful gnome-shell

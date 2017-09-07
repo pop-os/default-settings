@@ -1,3 +1,9 @@
+pop-default-settings (1.1.7) artful; urgency=medium
+
+  * Update workspace settings
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 07 Sep 2017 10:00:11 -0600
+
 pop-default-settings (1.1.6) artful; urgency=medium
 
   * Add pop-session

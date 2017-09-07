@@ -27,7 +27,7 @@ Depends: ${misc:Depends},
          gnome-session-common,
          xwayland,
          pop-gnome-shell-theme,
-Provides: x-session-manager
+Provides: x-session-manager, gnome-session
 Description: GNOME session for Pop
  This package contains the GNOME session used by Pop.
 

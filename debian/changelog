@@ -1,3 +1,9 @@
+pop-default-settings (1.1.9) artful; urgency=medium
+
+  * Add pop gnome-session session
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 07 Sep 2017 12:07:41 -0600
+
 pop-default-settings (1.1.8) artful; urgency=medium
 
   * Detach modal dialogs

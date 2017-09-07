@@ -22,8 +22,12 @@ Description: default settings for the Pop desktop
 Package: pop-session
 Architecture: any
 Depends: ${misc:Depends},
+         gnome-shell,
          gnome-session-bin,
+         gnome-session-common,
+         xwayland,
          pop-gnome-shell-theme,
+Provides: x-session-manager
 Description: GNOME session for Pop
  This package contains the GNOME session used by Pop.
 

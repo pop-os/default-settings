@@ -29,6 +29,9 @@ enabled-extensions=[]
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']
 app-picker-view=1
 
+[org.gnome.shell.overrides]
+attach-modal-dialogs=false
+
 [org.gnome.settings-daemon.plugins.xsettings]
 antialiasing='grayscale'
 

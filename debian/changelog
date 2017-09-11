@@ -1,3 +1,9 @@
+pop-default-settings (1.1.14) artful; urgency=medium
+
+  * Disable notifications in lock screen
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 11 Sep 2017 16:05:11 -0600
+
 pop-default-settings (1.1.13) artful; urgency=medium
 
   * Update gsettings to match Ubuntu's in format, allow vanilla session

@@ -37,6 +37,9 @@ font-name = "Fira Sans Semi-Light 10"
 document-font-name = "Roboto Slab 11"
 monospace-font-name = "Fira Mono 11"
 
+[org.gnome.desktop.notifications:pop]
+show-in-lock-screen = false
+
 [org.gtk.Settings.FileChooser:pop]
 sort-directories-first = true
 startup-mode = 'cwd'

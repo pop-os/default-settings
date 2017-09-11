@@ -36,6 +36,7 @@ cursor-theme = "Pop"
 font-name = "Fira Sans Semi-Light 10"
 document-font-name = "Roboto Slab 11"
 monospace-font-name = "Fira Mono 11"
+clock-show-date=true
 clock-format = '12h'
 
 [org.gnome.desktop.notifications:pop]

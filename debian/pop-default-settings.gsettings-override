@@ -36,6 +36,7 @@ cursor-theme = "Pop"
 font-name = "Fira Sans Semi-Light 10"
 document-font-name = "Roboto Slab 11"
 monospace-font-name = "Fira Mono 11"
+clock-format = '12h'
 
 [org.gnome.desktop.notifications:pop]
 show-in-lock-screen = false
@@ -43,6 +44,7 @@ show-in-lock-screen = false
 [org.gtk.Settings.FileChooser:pop]
 sort-directories-first = true
 startup-mode = 'cwd'
+clock-format = '12h'
 
 [org.gnome.desktop.wm.preferences:pop]
 theme = "Pop"
@@ -71,7 +73,6 @@ power-button-action = 'interactive'
 
 [org.gnome.settings-daemon.plugins.xsettings:pop]
 antialiasing = 'grayscale'
-
 
 #####################
 # Terminal settings #

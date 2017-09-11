@@ -1,3 +1,9 @@
+pop-default-settings (1.1.15) artful; urgency=medium
+
+  * Set default clock format to 12 hour
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 11 Sep 2017 16:49:20 -0600
+
 pop-default-settings (1.1.14) artful; urgency=medium
 
   * Disable notifications in lock screen

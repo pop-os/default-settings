@@ -1,3 +1,9 @@
+pop-default-settings (1.1.17) artful; urgency=medium
+
+  * Add application folders
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 12 Sep 2017 09:52:27 -0600
+
 pop-default-settings (1.1.16) artful; urgency=medium
 
   * Show date in clock

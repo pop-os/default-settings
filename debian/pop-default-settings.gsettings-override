@@ -26,6 +26,9 @@ always-show-log-out = true
 app-picker-view = 1
 enable-hot-corners = false
 
+[org.gnome.desktop.app-folders:pop]
+folder-children = [ 'Pop-Utilities', 'Pop-Viewers' ]
+
 [org.gnome.desktop.background:pop]
 show-desktop-icons = true
 

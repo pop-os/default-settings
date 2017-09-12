@@ -78,6 +78,22 @@ power-button-action = 'interactive'
 [org.gnome.settings-daemon.plugins.xsettings:pop]
 antialiasing = 'grayscale'
 
+##########################
+# Initial setup settings #
+##########################
+[org.gnome.desktop.interface:gnome-initial-setup]
+gtk-theme = "Pop"
+icon-theme = "Pop"
+cursor-theme = "Pop"
+font-name = "Fira Sans Semi-Light 10"
+document-font-name = "Roboto Slab 11"
+monospace-font-name = "Fira Mono 11"
+
+[org.gnome.desktop.wm.preferences:gnome-initial-setup]
+theme = "Pop"
+titlebar-font = 'Fira Sans Semi-Bold 10'
+titlebar-uses-system-font = false
+
 #####################
 # Terminal settings #
 #####################

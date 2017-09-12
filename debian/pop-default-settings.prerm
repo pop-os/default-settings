@@ -5,8 +5,8 @@ APP_FOLDER="org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/
 
 case "$1" in
     remove|upgrade|deconfigure)
-        gsettings reset-recursively "${APP_FOLDER}-Utilities/"
-        gsettings reset-recursively "${APP_FOLDER}-Viewers/"
+        # gsettings reset-recursively "${APP_FOLDER}-Utilities/"
+        # gsettings reset-recursively "${APP_FOLDER}-Viewers/"
 	;;
     failed-upgrade)
 	;;

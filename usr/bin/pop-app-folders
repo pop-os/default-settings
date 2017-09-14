@@ -1,0 +1,11 @@
+#!/bin/sh
+
+APP_FOLDER="org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Pop"
+
+gsettings set "${APP_FOLDER}-Utilities/" name "X-GNOME-Utilities.directory"
+gsettings set "${APP_FOLDER}-Utilities/" categories "['X-GNOME-Utilities']"
+gsettings set "${APP_FOLDER}-Utilities/" translate true
+
+gsettings set "${APP_FOLDER}-Viewers/" name "Viewers"
+gsettings set "${APP_FOLDER}-Viewers/" categories "['Player', 'Viewer']"
+gsettings set "${APP_FOLDER}-Viewers/" translate false

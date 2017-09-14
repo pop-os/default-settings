@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Pop App Folders
+Comment=Create Pop application folders
+Exec=pop-app-folders
+Terminal=false
+Icon=folder
+StartupNotify=false
+Categories=System;Settings;

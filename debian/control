@@ -24,10 +24,11 @@ Package: pop-session
 Architecture: any
 Depends: ${misc:Depends},
          gnome-shell,
+         gnome-shell-extension-always-show-workspaces,
          gnome-session-bin,
          gnome-session-common,
-         xwayland,
          pop-gnome-shell-theme,
+         xwayland,
 Provides: x-session-manager, gnome-session
 Description: GNOME session for Pop
  This package contains the GNOME session used by Pop.

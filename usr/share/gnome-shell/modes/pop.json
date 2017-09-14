@@ -1,5 +1,7 @@
 {
     "parentMode": "user",
     "stylesheetName": "pop.css",
-    "enabledExtensions": []
+    "enabledExtensions": [
+        "always-show-workspaces@system76.com"
+    ]
 }

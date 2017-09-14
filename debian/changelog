@@ -1,3 +1,9 @@
+pop-default-settings (1.2.2) artful; urgency=medium
+
+  * Add always-show-workspaces extension
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 14 Sep 2017 13:55:51 -0600
+
 pop-default-settings (1.2.1) artful; urgency=medium
 
   * Fix initial setup theme

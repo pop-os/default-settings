@@ -1,3 +1,9 @@
+pop-default-settings (1.2.4) artful; urgency=medium
+
+  * Add keyboard shortcuts for terminal and home
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 15 Sep 2017 11:39:04 -0600
+
 pop-default-settings (1.2.3) artful; urgency=medium
 
   * Correctly create app folders with startup entry

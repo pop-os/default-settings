@@ -85,6 +85,10 @@ edge-tiling = true
 dynamic-workspaces = true
 workspaces-only-on-primary = false
 
+[org.gnome.settings-daemon.plugins.media-keys:pop]
+home = '<Super>f'
+terminal = '<Super>t'
+
 [org.gnome.settings-daemon.plugins.power:pop]
 button-power = 'interactive'
 button-sleep = 'suspend'

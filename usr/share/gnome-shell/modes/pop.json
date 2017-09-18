@@ -1,8 +1,5 @@
 {
     "parentMode": "user",
     "stylesheetName": "pop.css",
-    "enabledExtensions": [
-        "always-show-workspaces@system76.com",
-        "pop-suspend-button@system76.com"
-    ]
+    "enabledExtensions": []
 }

@@ -2,10 +2,46 @@
 
 APP_FOLDER="org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Pop"
 
-gsettings set "${APP_FOLDER}-Utilities/" name "X-GNOME-Utilities.directory"
-gsettings set "${APP_FOLDER}-Utilities/" categories "['X-GNOME-Utilities']"
-gsettings set "${APP_FOLDER}-Utilities/" translate true
+gsettings reset-recursively "${APP_FOLDER}-Office/"
+gsettings set "${APP_FOLDER}-Office/" name "Office.directory"
+gsettings set "${APP_FOLDER}-Office/" translate true
+gsettings set "${APP_FOLDER}-Office/" apps "[
+'libreoffice-calc.desktop',
+'libreoffice-draw.desktop',
+'libreoffice-impress.desktop',
+'libreoffice-math.desktop',
+'libreoffice-startcenter.desktop',
+'libreoffice-writer.desktop'
+]"
 
-gsettings set "${APP_FOLDER}-Viewers/" name "Viewers"
-gsettings set "${APP_FOLDER}-Viewers/" categories "['Player', 'Viewer']"
-gsettings set "${APP_FOLDER}-Viewers/" translate false
+gsettings reset-recursively "${APP_FOLDER}-System/"
+gsettings set "${APP_FOLDER}-System/" name "System-Tools.directory"
+gsettings set "${APP_FOLDER}-System/" translate true
+gsettings set "${APP_FOLDER}-System/" apps "[
+'gnome-language-selector.desktop',
+'gnome-session-properties.desktop',
+'gnome-system-monitor.desktop',
+'im-config.desktop',
+'nvidia-settings.desktop',
+'org.gnome.baobab.desktop',
+'org.gnome.DiskUtility.desktop',
+'org.gnome.PowerStats.desktop',
+'seahorse.desktop',
+'software-properties-gnome.desktop',
+'system76-driver.desktop'
+]"
+
+gsettings reset-recursively "${APP_FOLDER}-Utility/"
+gsettings set "${APP_FOLDER}-Utility/" name "X-GNOME-Utilities.directory"
+gsettings set "${APP_FOLDER}-Utility/" translate true
+gsettings set "${APP_FOLDER}-Utility/" apps "[
+'com.github.donadigo.eddy.desktop',
+'eog.desktop',
+'evince.desktop',
+'file-roller.desktop',
+'gucharmap.desktop',
+'org.gnome.font-viewer.desktop',
+'org.gnome.Screenshot.desktop',
+'totem.desktop',
+'yelp.desktop'
+]"

@@ -43,7 +43,7 @@ app-picker-view = 1
 enable-hot-corners = false
 
 [org.gnome.desktop.app-folders:pop]
-folder-children = [ 'Pop-Utilities', 'Pop-Viewers' ]
+folder-children = [ 'Pop-Office', 'Pop-System', 'Pop-Utility' ]
 
 [org.gnome.desktop.background:pop]
 show-desktop-icons = true

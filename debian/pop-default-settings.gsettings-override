@@ -99,7 +99,7 @@ power-button-action = 'interactive'
 antialiasing = 'grayscale'
 
 [org.gnome.shell:pop]
-enabled-extensions = [ 'always-show-workspaces@system76.com', 'pop-suspend-button@system76.com' ]
+enabled-extensions = [ 'alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'pop-suspend-button@system76.com' ]
 
 #####################
 # Terminal settings #

@@ -24,6 +24,7 @@ Package: pop-session
 Architecture: any
 Depends: ${misc:Depends},
          gnome-shell,
+         gnome-shell-extension-alt-tab-raise-first-window,
          gnome-shell-extension-always-show-workspaces,
          gnome-shell-extension-pop-suspend-button,
          gnome-session-bin,

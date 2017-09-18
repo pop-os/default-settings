@@ -66,7 +66,11 @@ sort-directories-first = true
 startup-mode = 'cwd'
 clock-format = '12h'
 
+[org.gnome.desktop.wm.keybindings:pop]
+close = [ '<Super>w' ]
+
 [org.gnome.desktop.wm.preferences:pop]
+resize-with-right-button = true
 theme = "Pop"
 titlebar-font = 'Fira Sans Semi-Bold 10'
 titlebar-uses-system-font = false
@@ -87,6 +91,8 @@ workspaces-only-on-primary = false
 
 [org.gnome.settings-daemon.plugins.media-keys:pop]
 home = '<Super>f'
+magnifier-zoom-in = ''
+magnifier-zoom-out = ''
 terminal = '<Super>t'
 
 [org.gnome.settings-daemon.plugins.power:pop]

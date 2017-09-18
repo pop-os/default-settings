@@ -1,3 +1,9 @@
+pop-default-settings (1.2.10) artful; urgency=medium
+
+  * Disable zoom, resize with right button, add close shortcut
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 18 Sep 2017 16:12:38 -0600
+
 pop-default-settings (1.2.9) artful; urgency=medium
 
   * Move simple scan to utilities, rename system folder

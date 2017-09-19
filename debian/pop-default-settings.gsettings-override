@@ -3,7 +3,7 @@
 ###################
 
 [org.gnome.shell]
-favorite-apps = [ 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop' ]
+favorite-apps = ['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']
 
 [org.gnome.desktop.background]
 picture-uri = 'file:///usr/share/backgrounds/System76-Unleash_Your_Robot_Blue-by_Kate_Hazen_of_System76.png'
@@ -43,7 +43,7 @@ app-picker-view = 1
 enable-hot-corners = false
 
 [org.gnome.desktop.app-folders:pop]
-folder-children = [ 'Pop-Office', 'Pop-System', 'Pop-Utility' ]
+folder-children = ['Pop-Office', 'Pop-System', 'Pop-Utility']
 
 [org.gnome.desktop.background:pop]
 show-desktop-icons = true
@@ -67,7 +67,22 @@ startup-mode = 'cwd'
 clock-format = '12h'
 
 [org.gnome.desktop.wm.keybindings:pop]
-close = [ '<Super>w' ]
+close = ['<Super>w']
+maximize = []
+move-to-monitor-down = ['<Primary><Shift><Super>Down']
+move-to-monitor-left = ['<Primary><Shift><Super>Left']
+move-to-monitor-right = ['<Primary><Shift><Super>Right']
+move-to-monitor-up = ['<Primary><Shift><Super>Up']
+move-to-workspace-down = ['<Shift><Super>Down']
+move-to-workspace-left = ['<Shift><Super>Left']
+move-to-workspace-right = ['<Shift><Super>Right']
+move-to-workspace-up = ['<Shift><Super>Up']
+switch-to-workspace-down = ['<Super>Down']
+switch-to-workspace-left = ['<Super>Left']
+switch-to-workspace-right = ['<Super>Right']
+switch-to-workspace-up = ['<Super>Up']
+toggle-maximized = ['<Primary><Super>Up']
+unmaximize = ['<Primary><Super>Down']
 
 [org.gnome.desktop.wm.preferences:pop]
 resize-with-right-button = true
@@ -89,8 +104,11 @@ edge-tiling = true
 dynamic-workspaces = true
 workspaces-only-on-primary = false
 
+[org.gnome.mutter.keybindings]
+toggle-tiled-left = ['<Primary><Super>Left']
+toggle-tiled-right = ['<Primary><Super>Right']
+
 [org.gnome.settings-daemon.plugins.media-keys:pop]
-home = '<Super>f'
 terminal = '<Super>t'
 
 [org.gnome.settings-daemon.plugins.power:pop]
@@ -103,7 +121,7 @@ power-button-action = 'interactive'
 antialiasing = 'grayscale'
 
 [org.gnome.shell:pop]
-enabled-extensions = [ 'alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'pop-suspend-button@system76.com' ]
+enabled-extensions = ['alt-tab-raise-first-window@system76.com', 'always-show-workspaces@system76.com', 'pop-suspend-button@system76.com']
 
 #####################
 # Terminal settings #
@@ -124,5 +142,5 @@ cursor-foreground-color = 'rgb(73,185,199)'
 highlight-colors-set = true
 highlight-background-color = 'rgb(72,185,199)'
 highlight-foreground-color = 'rgb(255,255,255)'
-palette = [ 'rgb(51,51,51)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(136,128,124)', 'rgb(241,93,34)', 'rgb(115,196,143)', 'rgb(255,206,81)', 'rgb(72,185,199)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)' ]
+palette = ['rgb(51,51,51)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(136,128,124)', 'rgb(241,93,34)', 'rgb(115,196,143)', 'rgb(255,206,81)', 'rgb(72,185,199)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 audible-bell = false

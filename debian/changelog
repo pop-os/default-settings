@@ -1,3 +1,9 @@
+pop-default-settings (1.2.12) artful; urgency=medium
+
+  * Update keyboard shortcuts
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 19 Sep 2017 09:23:40 -0600
+
 pop-default-settings (1.2.11) artful; urgency=medium
 
   * Reenable zoom

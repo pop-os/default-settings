@@ -102,7 +102,7 @@ default-zoom-level = 'standard'
 attach-modal-dialogs = false
 edge-tiling = true
 dynamic-workspaces = true
-workspaces-only-on-primary = false
+workspaces-only-on-primary = true
 
 [org.gnome.mutter.keybindings]
 toggle-tiled-left = ['<Primary><Super>Left']

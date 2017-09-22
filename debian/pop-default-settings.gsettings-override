@@ -6,10 +6,10 @@
 favorite-apps = ['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']
 
 [org.gnome.desktop.background]
-picture-uri = 'file:///usr/share/backgrounds/System76-Unleash_Your_Robot_Blue-by_Kate_Hazen_of_System76.png'
+picture-uri = 'file:///usr/share/backgrounds/pop/kate-hazen-fractal-mountains.png'
 
 [org.gnome.desktop.screensaver]
-picture-uri = 'file:///usr/share/backgrounds/System76-Robot-by_Kate_Hazen_of_System76.png'
+picture-uri = 'file:///usr/share/backgrounds/pop/kate-hazen-mort1mer.png'
 
 [org.gnome.desktop.session]
 session-name = "pop"

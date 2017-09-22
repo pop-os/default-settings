@@ -13,10 +13,8 @@ Depends: ${misc:Depends},
          libglib2.0-bin,
          gnome-menus,
          pop-theme,
+         pop-wallpapers,
 Conflicts: system76-pop-default-settings
-Recommends: system76-wallpapers
-Breaks: system76-wallpapers-xenial (<< 16.10.1)
-Replaces: system76-wallpapers-xenial (<< 16.10.1)
 Description: default settings for the Pop desktop
  This package contains the default settings used by Pop.
 

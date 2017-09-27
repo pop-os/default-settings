@@ -46,3 +46,5 @@ gsettings set "${APP_FOLDER}-Utility/" apps "[
 'totem.desktop',
 'yelp.desktop'
 ]"
+
+gsettings reset org.gnome.desktop.interface scaling-factor

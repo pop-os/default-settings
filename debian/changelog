@@ -1,3 +1,9 @@
+pop-default-settings (1.2.19) artful; urgency=medium
+
+  * Replace os-release and GNOME control center icon
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 28 Sep 2017 12:10:42 -0600
+
 pop-default-settings (1.2.18) artful; urgency=medium
 
   * Fix mimetype for eddy

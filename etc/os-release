@@ -1,4 +1,4 @@
-NAME="Pop!_OS"
+NAME="Pop"
 VERSION="17.10 (Artful Aardvark)"
 ID=ubuntu
 ID_LIKE=debian

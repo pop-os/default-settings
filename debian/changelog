@@ -1,3 +1,9 @@
+pop-default-settings (1.2.20) artful; urgency=medium
+
+  * Change NAME in os-release to Pop
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 29 Sep 2017 09:04:32 -0600
+
 pop-default-settings (1.2.19) artful; urgency=medium
 
   * Replace os-release and GNOME control center icon

@@ -6,5 +6,6 @@ Comment=Create Pop application folders
 Exec=pop-app-folders
 Terminal=false
 Icon=folder
+NoDisplay=true
 StartupNotify=false
 Categories=System;Settings;

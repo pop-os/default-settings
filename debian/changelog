@@ -1,3 +1,9 @@
+pop-default-settings (1.2.21) artful; urgency=medium
+
+  * Change PRETTY_NAME in os-release to Pop
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 29 Sep 2017 09:07:13 -0600
+
 pop-default-settings (1.2.20) artful; urgency=medium
 
   * Change NAME in os-release to Pop

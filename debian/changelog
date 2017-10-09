@@ -1,3 +1,15 @@
+pop-default-settings (1.2.27) artful; urgency=medium
+
+  * Replace postrm and preinst with postinst and prerm
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 09 Oct 2017 14:03:23 -0600
+
+pop-default-settings (1.2.26) artful; urgency=medium
+
+  * Clean up /etc/os-release divert logic
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 09 Oct 2017 12:29:07 -0600
+
 pop-default-settings (1.2.25) artful; urgency=medium
 
   * Fix space in pop-text plymouth theme

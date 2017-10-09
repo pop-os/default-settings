@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    remove)
+        [ -L /etc/os-release ] && rm /etc/os-release
+        dpkg-divert --remove --package pop-default-settings --rename --divert /etc/os-release.diverted /etc/os-release
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

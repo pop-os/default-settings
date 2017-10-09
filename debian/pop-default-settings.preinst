@@ -2,11 +2,13 @@
 
 set -e
 
-#DEBHELPER#
-
 case "$1" in
     install|upgrade)
         dpkg-divert --package pop-default-settings --add --rename \
                     --divert /etc/os-release.diverted /etc/os-release
         ;;
 esac
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+#DEBHELPER#
+
+case "$1" in
+    configure)
+        [ \! -e /etc/os-release -o -L /etc/os-release ] && ln -sf /etc/pop-os/os-release /etc/os-release
+        ;;
+esac
+
+exit 0

@@ -32,7 +32,7 @@ case "$1" in
 	sed -re \
 		"/\[ubuntu-text\]/ {
 			N;
-			s/(title=Pop!_OS).*\$/\1$(lsb_release -rs)/
+			s/(title=Pop!_OS ).*\$/\1$(lsb_release -rs)/
 		}" /usr/share/plymouth/themes/pop-text/pop-text.plymouth.in \
 			> /usr/share/plymouth/themes/pop-text/pop-text.plymouth
 	update-alternatives \

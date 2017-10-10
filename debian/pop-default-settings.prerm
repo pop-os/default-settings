@@ -6,6 +6,8 @@ case "$1" in
     remove)
         [ -L /etc/os-release ] && rm /etc/os-release
         dpkg-divert --remove --package pop-default-settings --rename --divert /etc/os-release.diverted /etc/os-release
+        [ -L /etc/gdm3/custom.conf ] && rm /etc/gdm3/custom.conf
+        dpkg-divert --remove --package pop-default-settings --rename --divert /etc/gdm3/custom.conf.diverted /etc/gdm3/custom.conf
         ;;
 esac
 

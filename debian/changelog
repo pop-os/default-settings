@@ -1,3 +1,9 @@
+pop-default-settings (1.2.28) artful; urgency=medium
+
+  * Add pop-shop-details extension
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 10 Oct 2017 12:50:09 -0600
+
 pop-default-settings (1.2.27) artful; urgency=medium
 
   * Replace postrm and preinst with postinst and prerm

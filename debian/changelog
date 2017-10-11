@@ -1,3 +1,10 @@
+pop-default-settings (1.2.31) artful; urgency=medium
+
+  * Leave WaylandEnable=false in comment to allow casper to modify
+    custom.conf
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 11 Oct 2017 11:00:51 -0600
+
 pop-default-settings (1.2.30) artful; urgency=medium
 
   * Replace lsb-release description

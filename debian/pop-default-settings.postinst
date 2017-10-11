@@ -4,10 +4,11 @@ set -e
 
 case "$1" in
     configure)
-        dpkg-divert --add --package pop-default-settings --rename --divert /etc/os-release.diverted /etc/os-release
-        [ \! -e /etc/os-release -o -L /etc/os-release ] && ln -sf /etc/pop-os/os-release /etc/os-release
-        dpkg-divert --add --package pop-default-settings --rename --divert /etc/gdm3/custom.conf.diverted /etc/gdm3/custom.conf
-        [ \! -e /etc/gdm3/custom.conf -o -L /etc/gdm3/custom.conf ] && ln -sf /etc/pop-os/gdm3/custom.conf /etc/gdm3/custom.conf
+        for f in lsb-release os-release gdm3/custom.conf
+        do
+            dpkg-divert --add --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
+            [ \! -e "/etc/$f" -o -L "/etc/$f" ] && ln -sf "/etc/pop-os/$f" "/etc/$f"
+        done
         ;;
 esac
 

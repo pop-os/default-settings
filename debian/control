@@ -35,6 +35,12 @@ Provides: x-session-manager, gnome-session
 Description: GNOME session for Pop
  This package contains the GNOME session used by Pop.
 
+Package: grub-pop-disable-splash
+Architecture: any-i386 any-amd64 any-powerpc any-ppc64 any-ppc64el any-sparc any-sparc64 any-mipsel any-ia64 any-arm any-arm64
+Depends: ${misc:Depends}, grub-common
+Multi-Arch: foreign
+Description: GRand Unified Bootloader, version 2 (disable splash configuration)
+ This disables splash in GRUB
 
 Package: grub-theme-pop
 Architecture: any-i386 any-amd64 any-powerpc any-ppc64 any-ppc64el any-sparc any-sparc64 any-mipsel any-ia64 any-arm any-arm64

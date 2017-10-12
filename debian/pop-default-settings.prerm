@@ -10,6 +10,9 @@ case "$1" in
             dpkg-divert --remove --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
         done
         ;;
+
+    *)
+        ;;
 esac
 
 #DEBHELPER#

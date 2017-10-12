@@ -1,3 +1,15 @@
+pop-default-settings (1.3.2) artful; urgency=medium
+
+  * Add update-grub to postinst and postrm
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 12 Oct 2017 11:22:33 -0600
+
+pop-default-settings (1.3.1) artful; urgency=medium
+
+  * Add GRUB distributor Produce package that disables grub splash
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 12 Oct 2017 10:33:17 -0600
+
 pop-default-settings (1.3.0) artful; urgency=medium
 
   * Create apt preference for Pop repository

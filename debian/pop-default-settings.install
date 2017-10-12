@@ -1,5 +1,4 @@
 etc/apt
-etc/default/grub.d/pop-default-settings.cfg
 etc/pop-os
 etc/update-manager
 etc/xdg/autostart

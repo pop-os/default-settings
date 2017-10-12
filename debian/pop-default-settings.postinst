@@ -9,11 +9,6 @@ case "$1" in
             dpkg-divert --add --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
             [ \! -e "/etc/$f" -o -L "/etc/$f" ] && ln --force --relative --symbolic "/etc/pop-os/$f" "/etc/$f"
         done
-
-        if [ -e /boot/grub/grub.cfg ] && which update-grub2 >/dev/null 2>&1
-        then
-            update-grub2
-        fi
         ;;
 
     *)

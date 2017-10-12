@@ -1,3 +1,9 @@
+pop-default-settings (1.3.0) artful; urgency=medium
+
+  * Create apt preference for Pop repository
+
+ -- Jeremy Soller <jackpot51@gmail.com>  Wed, 11 Oct 2017 19:28:29 -0600
+
 pop-default-settings (1.2.31) artful; urgency=medium
 
   * Leave WaylandEnable=false in comment to allow casper to modify

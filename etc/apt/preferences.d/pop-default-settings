@@ -1,0 +1,3 @@
+Package: *
+Pin: release o=LP-PPA-system76-pop
+Pin-Priority: 1001

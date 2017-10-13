@@ -1,3 +1,9 @@
+pop-default-settings (2.0.1) artful; urgency=medium
+
+  * Add staging repo priority
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 13 Oct 2017 15:25:43 -0600
+
 pop-default-settings (2.0.0) artful; urgency=medium
 
   * Remove pop-grub-theme, pop-plymouth-theme, and pop-session

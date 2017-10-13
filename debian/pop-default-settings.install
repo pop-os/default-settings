@@ -1,8 +1,2 @@
-etc/apt
-etc/pop-os
-etc/update-manager
-etc/xdg/autostart
-usr/bin
-usr/lib
-usr/share/applications
-usr/share/icons/pop-os-branding
+etc
+usr

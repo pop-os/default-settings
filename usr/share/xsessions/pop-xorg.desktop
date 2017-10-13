@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Pop on Xorg
-Comment=This session logs you into Pop
-Exec=env GNOME_SHELL_SESSION_MODE=pop  gnome-session --session=pop
-TryExec=gnome-shell
-Icon=
-Type=Application
-DesktopNames=pop:GNOME
-X-Ubuntu-Gettext-Domain=gnome-session-3.0

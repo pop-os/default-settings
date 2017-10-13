@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Jeremy Soller <jeremy@system76.com>
 Uploaders: Ian Santopietro <ian@system76.com>
-Build-Depends: debhelper (>= 10), imagemagick
+Build-Depends: debhelper (>= 10)
 Standards-Version: 3.9.8
 Homepage: https://github.com/system76/pop-default-settings
 
@@ -15,65 +15,5 @@ Depends: ${misc:Depends},
          gnome-menus,
          pop-theme,
          pop-wallpapers,
-Conflicts: system76-pop-default-settings
 Description: default settings for the Pop desktop
  This package contains the default settings used by Pop.
-
-Package: pop-session
-Architecture: any
-Depends: ${misc:Depends},
-         gnome-shell,
-         gnome-shell-extension-alt-tab-raise-first-window,
-         gnome-shell-extension-always-show-workspaces,
-         gnome-shell-extension-pop-shop-details,
-         gnome-shell-extension-pop-suspend-button,
-         gnome-session-bin,
-         gnome-session-common,
-         pop-gnome-shell-theme,
-         xwayland,
-Provides: x-session-manager, gnome-session
-Description: GNOME session for Pop
- This package contains the GNOME session used by Pop.
-
-Package: grub-pop-disable-splash
-Architecture: any-i386 any-amd64 any-powerpc any-ppc64 any-ppc64el any-sparc any-sparc64 any-mipsel any-ia64 any-arm any-arm64
-Depends: ${misc:Depends}, grub-common
-Multi-Arch: foreign
-Description: GRand Unified Bootloader, version 2 (disable splash configuration)
- This disables splash in GRUB
-
-Package: grub-theme-pop
-Architecture: any-i386 any-amd64 any-powerpc any-ppc64 any-ppc64el any-sparc any-sparc64 any-mipsel any-ia64 any-arm any-arm64
-Depends: ${misc:Depends}, grub-common
-Conflicts: grub-theme-system76
-Multi-Arch: foreign
-Description: GRand Unified Bootloader, version 2 (pop theme)
- This is the default pop theme for GRUB's graphical menu.
-
-Package: plymouth-theme-pop-logo
-Architecture: any
-Depends: ${misc:Depends}, plymouth, plymouth-label, plymouth-themes
-Conflicts: plymouth-theme-system76-logo
-Provides: plymouth-theme
-Breaks: plymouth (<< 0.9.2-3ubuntu1~),
-Description: graphical boot animation and logger - pop-logo theme
- Plymouth is an application that runs very early in the boot process
- (even before the root filesystem is mounted!) that provides a graphical
- boot animation while the boot process happens in the background.
- .
- This package contains the default pop-logo theme.
-
-Package: plymouth-theme-pop-text
-Architecture: any
-Depends: ${misc:Depends}, plymouth, plymouth-theme-ubuntu-text
-Conflicts: plymouth-theme-system76-text
-Provides: plymouth-theme
-Replaces: plymouth (<< 0.8.1-1~)
-Breaks: plymouth (<< 0.9.2-3ubuntu1~),
-Description: graphical boot animation and logger - pop-text theme
- Plymouth is an application that runs very early in the boot process
- (even before the root filesystem is mounted!) that provides a graphical
- boot animation while the boot process happens in the background.
- .
- This package contains the default pop-text text theme used when no
- support for a graphical theme is found on your system.

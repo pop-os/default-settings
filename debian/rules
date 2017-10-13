@@ -1,20 +1,11 @@
 #!/usr/bin/make -f
 
-PLYMOUTH_PATH=debian/plymouth-theme-pop-logo/usr/share/plymouth/themes/pop-logo
-
-override_dh_install:
-	dh_install
-	for image in src/plymouth/*.png; do \
-		convert "$$image" -colors 256 "$(PLYMOUTH_PATH)/$$(basename "$$image")"; \
-	done
-
 override_dh_installgsettings:
 	dh_installgsettings --priority=50
 
-binary-arch: build install
+override_dh_installdeb:
 	dh_installdeb
-	rm debian/pop-default-settings/DEBIAN/conffiles
+	cp debian/conffiles debian/pop-default-settings/DEBIAN/conffiles
 
 %:
-	echo "$@"
 	dh $@

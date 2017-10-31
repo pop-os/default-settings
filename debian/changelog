@@ -1,3 +1,9 @@
+pop-default-settings (2.0.2) artful; urgency=medium
+
+  * Make build take sbuild environment for lsb-release and os-release
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 31 Oct 2017 10:37:08 -0600
+
 pop-default-settings (2.0.1) artful; urgency=medium
 
   * Add staging repo priority

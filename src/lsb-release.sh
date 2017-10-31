@@ -1,8 +1,10 @@
 #!/bin/bash
 
+source /etc/os-release
+
 cat <<EOF
-DISTRIB_ID=$(lsb_release -si)
-DISTRIB_RELEASE=$(lsb_release -sr)
-DISTRIB_CODENAME=$(lsb_release -sc)
-DISTRIB_DESCRIPTION="Pop!_OS $(lsb_release -sr)"
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=${VERSION_ID}
+DISTRIB_CODENAME=${VERSION_CODENAME}
+DISTRIB_DESCRIPTION="Pop!_OS ${VERSION}"
 EOF

@@ -1,3 +1,9 @@
+pop-default-settings (2.0.5) artful; urgency=medium
+
+  * Migrate staging to proposed
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 03 Nov 2017 12:25:23 -0600
+
 pop-default-settings (2.0.4) artful; urgency=medium
 
   * Update bug report url

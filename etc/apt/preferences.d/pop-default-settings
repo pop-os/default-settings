@@ -3,5 +3,5 @@ Pin: release o=LP-PPA-system76-pop
 Pin-Priority: 1001
 
 Package: *
-Pin: release o=LP-PPA-system76-pop-staging
+Pin: release o=LP-PPA-system76-proposed
 Pin-Priority: 1001

@@ -42,6 +42,7 @@ gsettings set "${APP_FOLDER}-Utility/" apps "[
 'gucharmap.desktop',
 'org.gnome.font-viewer.desktop',
 'org.gnome.Screenshot.desktop',
+'popsicle.desktop',
 'simple-scan.desktop',
 'totem.desktop',
 'yelp.desktop'

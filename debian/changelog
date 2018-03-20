@@ -1,3 +1,9 @@
+pop-default-settings (2.0.6) bionic; urgency=medium
+
+  * Add popsicle.desktop to Utility folder
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 20 Mar 2018 15:08:24 -0600
+
 pop-default-settings (2.0.5) artful; urgency=medium
 
   * Migrate staging to proposed

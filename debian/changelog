@@ -1,3 +1,9 @@
+pop-default-settings (2.0.7) bionic; urgency=medium
+
+  * Add installer to favorites
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 22 Mar 2018 09:43:42 -0600
+
 pop-default-settings (2.0.6) bionic; urgency=medium
 
   * Add popsicle.desktop to Utility folder

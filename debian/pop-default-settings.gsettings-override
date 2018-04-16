@@ -17,6 +17,9 @@ session-name = "pop"
 [org.gnome.login-screen]
 logo = ''
 
+[org.gnome.settings-daemon.plugins.power]
+sleep-inactive-ac-type = 'nothing'
+
 ##########################
 # initial-setup settings #
 ##########################
@@ -56,10 +59,3 @@ highlight-background-color = 'rgb(72,185,199)'
 highlight-foreground-color = 'rgb(255,255,255)'
 palette = ['rgb(51,51,51)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(136,128,124)', 'rgb(241,93,34)', 'rgb(115,196,143)', 'rgb(255,206,81)', 'rgb(72,185,199)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 audible-bell = false
-
-##################
-# Gedit Settings #
-##################
-
-[org.gnome.gedit.preferences]
-scheme = 'pop-light'

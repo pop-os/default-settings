@@ -1,3 +1,10 @@
+pop-default-settings (3.0.0) bionic; urgency=medium
+
+  * Split bionic release
+  * Disable automatic suspend on AC
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 16 Apr 2018 12:58:18 -0600
+
 pop-default-settings (2.0.7) bionic; urgency=medium
 
   * Add installer to favorites

@@ -1,2 +1,5 @@
 [Default Applications]
 application/x-debian-package=com.github.donadigo.eddy.desktop
+application/x-cd-image=popsicle.desktop
+application/x-raw-disk-image=popsicle.desktop
+application/x-raw-disk-image-xz-compressed=popsicle.desktop

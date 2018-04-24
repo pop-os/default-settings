@@ -15,6 +15,14 @@ case "$1" in
         ;;
 esac
 
+for f in lsb-release os-release
+do
+    if dpkg-divert --list | grep -F "/etc/$f"
+    then
+            dpkg-divert --remove --rename "/etc/$f"
+    fi
+done
+
 #DEBHELPER#
 
 exit 0

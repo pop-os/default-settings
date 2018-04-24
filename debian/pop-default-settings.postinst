@@ -4,7 +4,7 @@ set -e
 
 case "$1" in
     configure)
-        for f in lsb-release os-release default/console-setup gdm3/custom.conf
+        for f in default/console-setup gdm3/custom.conf
         do
             dpkg-divert --add --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
             [ \! -e "/etc/$f" -o -L "/etc/$f" ] && ln --force --relative --symbolic "/etc/pop-os/$f" "/etc/$f"

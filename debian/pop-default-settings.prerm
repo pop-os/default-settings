@@ -4,7 +4,7 @@ set -e
 
 case "$1" in
     remove)
-        for f in lsb-release os-release default/console-setup gdm3/custom.conf
+        for f in default/console-setup gdm3/custom.conf
         do
             [ -L "/etc/$f" ] && rm "/etc/$f"
             dpkg-divert --remove --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"

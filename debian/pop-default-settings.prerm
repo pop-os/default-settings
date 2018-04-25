@@ -6,8 +6,13 @@ case "$1" in
     remove)
         for f in default/console-setup gdm3/custom.conf
         do
-            [ -L "/etc/$f" ] && rm "/etc/$f"
-            dpkg-divert --remove --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
+            if [ -L "/etc/$f" ]
+            then
+                rm "/etc/$f"
+                dpkg-divert --remove --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
+            else
+                dpkg-divert --remove --package pop-default-settings --divert "/etc/$f.diverted" "/etc/$f"
+            fi
         done
         ;;
 
@@ -19,8 +24,13 @@ for f in lsb-release os-release
 do
     if dpkg-divert --list | grep -F "/etc/$f"
     then
-        [ -L "/etc/$f" ] && rm "/etc/$f"
-        dpkg-divert --remove --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
+        if [ -L "/etc/$f" ]
+        then
+            rm "/etc/$f"
+            dpkg-divert --remove --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
+        else
+            dpkg-divert --remove --package pop-default-settings --divert "/etc/$f.diverted" "/etc/$f"
+        fi
     fi
 done
 

@@ -19,7 +19,8 @@ for f in lsb-release os-release
 do
     if dpkg-divert --list | grep -F "/etc/$f"
     then
-            dpkg-divert --remove --rename "/etc/$f"
+        [ -L "/etc/$f" ] && rm "/etc/$f"
+        dpkg-divert --remove --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
     fi
 done
 

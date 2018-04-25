@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source "$(dirname "$0")/release.sh"
+
+cat <<EOF
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=${VERSION_ID}
+DISTRIB_CODENAME=${VERSION_CODENAME}
+DISTRIB_DESCRIPTION="${PRETTY_NAME}"
+EOF

@@ -20,6 +20,14 @@ logo = ''
 [org.gnome.settings-daemon.plugins.power]
 sleep-inactive-ac-type = 'nothing'
 
+#####################
+# Touchpad settings #
+#####################
+
+[org.gnome.desktop.peripherals.touchpad]
+tap-to-click=true
+natural-scroll=false
+
 ##########################
 # initial-setup settings #
 ##########################

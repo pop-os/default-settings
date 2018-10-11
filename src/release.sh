@@ -2,7 +2,7 @@
 
 source /etc/os-release
 NAME="Pop!_OS"
-VERSION="${VERSION_ID} LTS"
+VERSION="${VERSION_ID}"
 PRETTY_NAME="${NAME} ${VERSION}"
 HOME_URL="https://system76.com/pop"
 SUPPORT_URL="http://support.system76.com"

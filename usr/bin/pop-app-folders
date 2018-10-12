@@ -38,14 +38,14 @@ gsettings set "${APP_FOLDER}-Utility/" translate true
 gsettings set "${APP_FOLDER}-Utility/" apps "[
 'com.github.donadigo.eddy.desktop',
 'eog.desktop',
-'evince.desktop',
-'file-roller.desktop',
 'gucharmap.desktop',
+'org.gnome.Evince.desktop',
+'org.gnome.FileRoller.desktop',
 'org.gnome.font-viewer.desktop',
 'org.gnome.Screenshot.desktop',
+'org.gnome.Totem.desktop',
 'popsicle.desktop',
 'simple-scan.desktop',
-'totem.desktop',
 'yelp.desktop'
 ]"
 

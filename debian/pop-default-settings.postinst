@@ -15,18 +15,21 @@ case "$1" in
             dpkg-divert --add --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
             [ \! -e "/etc/$f" -o -L "/etc/$f" ] && ln --force --relative --symbolic "/etc/pop-os/$f" "/etc/$f"
         done
+        
+        # Add Pop proprietary repo if it is missing.
+        RELEASE="$(lsb_release -cs)"
+        REPO="deb http://apt.pop-os.org/proprietary ${RELEASE} main"
+        KEY="204DD8AEC33A7AFF"
+        if ! grep "${REPO}" /etc/apt/sources.list > /dev/null
+        then
+            apt-key adv --keyserver "keyserver.ubuntu.com" --recv-keys "${KEY}"
+            add-apt-repository "${REPO}"
+        fi
         ;;
 
     *)
         ;;
 esac
-
-# Add the Pop proprietary PPA if it is missing.
-if ! grep 'apt.pop-os.org/proprietary' /etc/apt/sources.list; then
-    # TODO: perhaps make this key part of a keyring package?
-    apt-key adv --keyserver "keyserver.ubuntu.com" --recv-keys "204DD8AEC33A7AFF"
-    add-apt-repository "deb http://apt.pop-os.org/proprietary $(lsb_release -cs) main"
-fi
 
 #DEBHELPER#
 

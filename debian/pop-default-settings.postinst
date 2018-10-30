@@ -23,7 +23,7 @@ case "$1" in
         if ! grep "${REPO}" /etc/apt/sources.list > /dev/null
         then
             apt-key adv --keyserver "keyserver.ubuntu.com" --recv-keys "${KEY}"
-            add-apt-repository "${REPO}"
+            add-apt-repository --yes "${REPO}"
         fi
         ;;
 

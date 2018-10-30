@@ -10,9 +10,10 @@ Homepage: https://github.com/system76/pop-default-settings
 Package: pop-default-settings
 Architecture: any
 Depends: ${misc:Depends},
-         base-files,
+         base-files (>= 10),
          libglib2.0-bin,
          gnome-menus,
+         gnupg,
          plymouth-theme-pop-basic,
          pop-session,
          pop-theme,

@@ -21,6 +21,13 @@ case "$1" in
         ;;
 esac
 
+# Add the Pop proprietary PPA if it is missing.
+if ! grep 'apt.pop-os.org/proprietary' /etc/apt/sources.list; then
+    # TODO: perhaps make this key part of a keyring package?
+    apt-key adv --keyserver "hkp://keyserver.ubuntu.com:80" --recv-keys "204DD8AEC33A7AFF"
+    add-apt-repository "deb http://apt.pop-os.org/proprietary $(lsb_release -cs) main"
+fi
+
 #DEBHELPER#
 
 exit 0

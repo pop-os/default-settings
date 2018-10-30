@@ -18,5 +18,6 @@ Depends: ${misc:Depends},
          pop-session,
          pop-theme,
          pop-wallpapers,
+         software-properties-common,
 Description: default settings for the Pop desktop
  This package contains the default settings used by Pop.

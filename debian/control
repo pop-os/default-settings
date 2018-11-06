@@ -10,12 +10,14 @@ Homepage: https://github.com/system76/pop-default-settings
 Package: pop-default-settings
 Architecture: any
 Depends: ${misc:Depends},
-         base-files,
+         base-files (>= 10),
          libglib2.0-bin,
          gnome-menus,
+         gnupg,
          plymouth-theme-pop-basic,
          pop-session,
          pop-theme,
          pop-wallpapers,
+         software-properties-common,
 Description: default settings for the Pop desktop
  This package contains the default settings used by Pop.

@@ -15,6 +15,16 @@ case "$1" in
             dpkg-divert --add --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
             [ \! -e "/etc/$f" -o -L "/etc/$f" ] && ln --force --relative --symbolic "/etc/pop-os/$f" "/etc/$f"
         done
+        
+        # Add Pop proprietary repo if it is missing.
+        RELEASE="$(lsb_release -cs)"
+        REPO="deb http://apt.pop-os.org/proprietary ${RELEASE} main"
+        KEY="204DD8AEC33A7AFF"
+        if ! grep "${REPO}" /etc/apt/sources.list > /dev/null
+        then
+            apt-key adv --keyserver "keyserver.ubuntu.com" --recv-keys "${KEY}"
+            add-apt-repository --yes "${REPO}"
+        fi
         ;;
 
     *)

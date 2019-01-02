@@ -22,7 +22,21 @@ case "$1" in
         KEY="204DD8AEC33A7AFF"
         if ! grep "${REPO}" /etc/apt/sources.list > /dev/null
         then
-            apt-key adv --keyserver "keyserver.ubuntu.com" --recv-keys "${KEY}"
+            KEY_FOUND=0
+
+            ## Attempt to fetch key from each keyserver -- break on the first success
+            for keyserver in "keyserver.ubuntu.com" "pool.sks-keyservers.net" "keys.gnupg.net"; do
+                if apt-key adv --keyserver "${keyserver}" --recv-keys "${KEY}"; then
+                    KEY_FOUND=1
+                    break
+                fi
+            done
+
+            if test "${KEY_FOUND}" = "0"; then
+                echo "failed to find Pop's GPG key on any key server"
+                false
+            fi
+
             add-apt-repository --yes "${REPO}"
         fi
         ;;

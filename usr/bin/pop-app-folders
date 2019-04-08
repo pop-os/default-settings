@@ -22,6 +22,7 @@ gsettings set "${APP_FOLDER}-System/" apps "[
 'gnome-session-properties.desktop',
 'gnome-system-monitor.desktop',
 'im-config.desktop',
+'nm-connection-editor.desktop',
 'nvidia-settings.desktop',
 'org.gnome.baobab.desktop',
 'org.gnome.DiskUtility.desktop',

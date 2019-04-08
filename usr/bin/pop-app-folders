@@ -27,7 +27,7 @@ gsettings set "${APP_FOLDER}-System/" apps "[
 'org.gnome.baobab.desktop',
 'org.gnome.DiskUtility.desktop',
 'org.gnome.PowerStats.desktop',
-'seahorse.desktop',
+'org.gnome.seahorse.Application.desktop',
 'software-properties-gnome.desktop',
 'system76-driver.desktop',
 'system76-firmware.desktop'

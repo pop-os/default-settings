@@ -39,6 +39,12 @@ theme = "Pop"
 titlebar-font = 'Fira Sans Semi-Bold 10'
 titlebar-uses-system-font = false
 
+##################
+# Gedit Settings #
+##################
+[org.gnome.gedit.preferences.editor]
+scheme = 'pop-light'
+
 #####################
 # Terminal settings #
 #####################

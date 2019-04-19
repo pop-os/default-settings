@@ -7,7 +7,9 @@ case "$1" in
         for f in lsb-release os-release
         do
             dpkg-divert --add --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
+            dpkg-divert --add --package pop-default-settings --rename --divert "/usr/lib/$f.diverted" "/usr/lib/$f"
             ln --force --relative --symbolic "/etc/pop-os/$f" "/etc/$f"
+            ln --force --relative --symbolic "/etc/pop-os/$f" "/usr/lib/$f"
         done
 
         for f in gdm3/custom.conf
@@ -15,7 +17,7 @@ case "$1" in
             dpkg-divert --add --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
             [ \! -e "/etc/$f" -o -L "/etc/$f" ] && ln --force --relative --symbolic "/etc/pop-os/$f" "/etc/$f"
         done
-        
+
         # Add Pop proprietary repo if it is missing.
         RELEASE="$(lsb_release -cs)"
         REPO="deb http://apt.pop-os.org/proprietary ${RELEASE} main"

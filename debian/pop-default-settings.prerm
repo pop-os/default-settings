@@ -8,6 +8,10 @@ case "$1" in
         do
             [ -L "/etc/$f" ] && rm "/etc/$f"
             dpkg-divert --remove --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
+            if [ -L "/usr/lib/$f" ]; then
+                rm "/usr/lib/$f"
+                dpkg-divert --remove --package pop-default-settings --rename --divert "/usr/lib/$f.diverted" "/usr/lib/$f"
+            fi
         done
         ;;
 

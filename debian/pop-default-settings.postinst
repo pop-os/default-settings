@@ -2,20 +2,28 @@
 
 set -e
 
+# Make sure this is in sync with prerm
+package=pop-default-settings
+diverts=(
+    "/etc/gdm3/custom.conf=/etc/pop-os/gdm3/custom.conf"
+    "/etc/lsb-release=/etc/pop-os/lsb-release"
+    "/etc/os-release=/etc/pop-os/os-release"
+    "/usr/lib/os-release=/etc/pop-os/os-release"
+)
+
 case "$1" in
     configure)
-        for f in lsb-release os-release
+        for divert in "${diverts[@]}"
         do
-            dpkg-divert --add --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
-            dpkg-divert --add --package pop-default-settings --rename --divert "/usr/lib/$f.diverted" "/usr/lib/$f"
-            ln --force --relative --symbolic "/etc/pop-os/$f" "/etc/$f"
-            ln --force --relative --symbolic "/etc/pop-os/$f" "/usr/lib/$f"
-        done
+            source="${divert%%=*}"
+            dest="${divert#*=}"
 
-        for f in gdm3/custom.conf
-        do
-            dpkg-divert --add --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
-            [ \! -e "/etc/$f" -o -L "/etc/$f" ] && ln --force --relative --symbolic "/etc/pop-os/$f" "/etc/$f"
+            dpkg-divert --add --package pop-default-settings --rename --divert "$source.diverted" "$source"
+
+            if [ -L "$source" -o ! -e "$source" ]
+            then
+                ln --force --relative --symbolic "$dest" "$source"
+            fi
         done
 
         # Add Pop proprietary repo if it is missing.

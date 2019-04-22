@@ -1,13 +1,32 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
+# Make sure this is in sync with postinst
+package=pop-default-settings
+diverts=(
+    "/etc/gdm3/custom.conf=/etc/pop-os/gdm3/custom.conf"
+    "/etc/lsb-release=/etc/pop-os/lsb-release"
+    "/etc/os-release=/etc/pop-os/os-release"
+    "/usr/lib/os-release=/etc/pop-os/os-release"
+)
+
 case "$1" in
     remove)
-        for f in lsb-release os-release gdm3/custom.conf
+        for divert in "${diverts[@]}"
         do
-            [ -L "/etc/$f" ] && rm "/etc/$f"
-            dpkg-divert --remove --package pop-default-settings --rename --divert "/etc/$f.diverted" "/etc/$f"
+            source="${divert%%=*}"
+            dest="${divert#*=}"
+
+            if [ "$(dpkg-divert --listpackage "$source")" == "$package" ]
+            then
+                if [ -L "$source" ]
+                then
+                    rm "$source"
+                fi
+
+                dpkg-divert --remove --package "$package" --rename --divert "$source.diverted" "$source"
+            fi
         done
         ;;
 

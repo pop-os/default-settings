@@ -43,6 +43,7 @@ gsettings set "${APP_FOLDER}-Utility/" name "X-GNOME-Utilities.directory"
 gsettings set "${APP_FOLDER}-Utility/" translate true
 gsettings set "${APP_FOLDER}-Utility/" apps "[
 'com.github.donadigo.eddy.desktop',
+'com.system76.Popsicle.desktop',
 'eog.desktop',
 'gucharmap.desktop',
 'org.gnome.Evince.desktop',
@@ -50,7 +51,6 @@ gsettings set "${APP_FOLDER}-Utility/" apps "[
 'org.gnome.font-viewer.desktop',
 'org.gnome.Screenshot.desktop',
 'org.gnome.Totem.desktop',
-'popsicle.desktop',
 'simple-scan.desktop',
 'yelp.desktop'
 ]"

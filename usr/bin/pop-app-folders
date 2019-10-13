@@ -46,6 +46,7 @@ gsettings set "${APP_FOLDER}-Utility/" apps "[
 'com.system76.Popsicle.desktop',
 'eog.desktop',
 'gucharmap.desktop',
+'info.desktop',
 'org.gnome.Evince.desktop',
 'org.gnome.FileRoller.desktop',
 'org.gnome.font-viewer.desktop',

@@ -1,6 +1,6 @@
 [Default Applications]
 application/x-debian-package=com.github.donadigo.eddy.desktop
-application/x-cd-image=popsicle.desktop
-application/x-raw-disk-image=popsicle.desktop
-application/x-raw-disk-image-xz-compressed=popsicle.desktop
+application/x-cd-image=com.system76.Popsicle.desktop
+application/x-raw-disk-image=com.system76.Popsicle.desktop
+application/x-raw-disk-image-xz-compressed=com.system76.Popsicle.desktop
 text/calendar=org.gnome.Calendar.desktop

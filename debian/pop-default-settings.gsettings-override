@@ -34,6 +34,9 @@ monospace-font-name = "Fira Mono 11"
 clock-show-date=true
 clock-format = '12h'
 
+[org.gnome.desktop.sound:GNOME-Greeter]
+theme-name = "Pop"
+
 [org.gnome.desktop.wm.preferences:GNOME-Greeter]
 theme = "Pop"
 titlebar-font = 'Fira Sans Semi-Bold 10'

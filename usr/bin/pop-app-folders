@@ -1,5 +1,15 @@
 #!/bin/sh
 
+GTK_THEME="$(gsettings get org.gnome.desktop.interface gtk-theme)"
+case "$GTK_THEME" in
+"'Pop-light'" | "'Pop-slim'" | "'Pop-slim-light'" )
+    gsettings set org.gnome.desktop.interface gtk-theme "'Pop'"
+    ;;
+"'Pop-slim-dark'" )
+    gsettings set org.gnome.desktop.interface gtk-theme "'Pop-dark'"
+    ;;
+esac
+
 if [ -e "${HOME}/.cache/pop-app-folders" ]
 then
     exit 0

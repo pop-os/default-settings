@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ -e "${HOME}/.cache/pop-flatpak-repos" ]
+then
+    exit 0
+fi
+
+if command -v flatpak >/dev/null
+then
+    flatpak remote-add --user --if-not-exists flathub /etc/pop-os/flatpak/flathub.flatpakrepo &&
+    touch "${HOME}/.cache/pop-flatpak-repos"
+fi

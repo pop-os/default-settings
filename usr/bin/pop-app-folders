@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ -e "${HOME}/.cache/pop-app-folders" ]
+then
+    exit 0
+fi
+
 APP_FOLDER="org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Pop"
 
 gsettings reset-recursively "${APP_FOLDER}-Office/"
@@ -48,5 +53,7 @@ gsettings set "${APP_FOLDER}-Utility/" apps "[
 'totem.desktop',
 'yelp.desktop'
 ]"
+
+touch "${HOME}/.cache/pop-app-folders"
 
 gsettings reset org.gnome.desktop.interface scaling-factor

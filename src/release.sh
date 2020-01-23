@@ -3,6 +3,8 @@
 source /etc/os-release
 NAME="Pop!_OS"
 VERSION="${VERSION_ID}"
+ID="pop"
+ID_LIKE="ubuntu debian"
 PRETTY_NAME="${NAME} ${VERSION}"
 HOME_URL="https://system76.com/pop"
 SUPPORT_URL="http://support.system76.com"

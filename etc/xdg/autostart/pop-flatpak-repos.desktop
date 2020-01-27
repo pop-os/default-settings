@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Pop Flatpak Repos
+Comment=Add Pop flatpak repos to user
+Exec=pop-flatpak-repos
+Terminal=false
+Icon=folder
+NoDisplay=true
+StartupNotify=false
+Categories=System;Settings;

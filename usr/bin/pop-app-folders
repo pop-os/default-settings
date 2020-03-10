@@ -58,6 +58,7 @@ gsettings set "${APP_FOLDER}-Utility/" apps "[
 'gucharmap.desktop',
 'info.desktop',
 'org.gnome.Evince.desktop',
+'org.gnome.Extensions.desktop',
 'org.gnome.FileRoller.desktop',
 'org.gnome.font-viewer.desktop',
 'org.gnome.Screenshot.desktop',

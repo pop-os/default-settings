@@ -54,9 +54,9 @@ gsettings set "${APP_FOLDER}-Utility/" translate true
 gsettings set "${APP_FOLDER}-Utility/" apps "[
 'com.github.donadigo.eddy.desktop',
 'com.system76.Popsicle.desktop',
-'eog.desktop',
 'gucharmap.desktop',
 'info.desktop',
+'org.gnome.eog.desktop',
 'org.gnome.Evince.desktop',
 'org.gnome.FileRoller.desktop',
 'org.gnome.font-viewer.desktop',

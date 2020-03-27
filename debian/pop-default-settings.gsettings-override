@@ -6,7 +6,7 @@
 favorite-apps = ['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'io.elementary.appcenter.desktop', 'io.elementary.installer.desktop']
 
 [org.gnome.desktop.background]
-picture-uri = 'file:///usr/share/backgrounds/pop/kate-hazen-unleash-your-robot-blue.png'
+picture-uri = 'file:///usr/share/backgrounds/pop/kate-hazen-pop-retro1.png'
 
 [org.gnome.desktop.screensaver]
 picture-uri = 'file:///usr/share/backgrounds/pop/kate-hazen-mort1mer.png'

@@ -1,3 +1,9 @@
+pop-default-settings (4.0.0~~alpha) focal; urgency=medium
+
+  * Focal release
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 27 Mar 2020 09:14:42 -0600
+
 pop-default-settings (3.0.3) eoan; urgency=medium
 
   * Set sound theme

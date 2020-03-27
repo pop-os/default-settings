@@ -6,6 +6,8 @@ set -e
 package=pop-default-settings
 diverts=(
     "/etc/gdm3/custom.conf=/etc/pop-os/gdm3/custom.conf"
+    "/etc/issue=/etc/pop-os/issue"
+    "/etc/issue.net=/etc/pop-os/issue.net"
     "/etc/lsb-release=/etc/pop-os/lsb-release"
     "/etc/os-release=/etc/pop-os/os-release"
     "/usr/lib/os-release=/etc/pop-os/os-release"

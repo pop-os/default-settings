@@ -25,7 +25,7 @@ sleep-inactive-battery-type = 'nothing'
 # initial-setup settings #
 ##########################
 [org.gnome.desktop.interface:GNOME-Greeter]
-gtk-theme = "Pop"
+gtk-theme = "Pop-dark"
 icon-theme = "Pop"
 cursor-theme = "Pop"
 font-name = "Fira Sans Semi-Light 10"

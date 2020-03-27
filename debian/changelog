@@ -1,10 +1,10 @@
-pop-default-settings (4.0.0~~alpha) focal; urgency=medium
+pop-default-settings (4.0.0) focal; urgency=medium
 
   * Focal release
   * Default to dark theme
   * Update default background
 
- -- Jeremy Soller <jeremy@system76.com>  Fri, 27 Mar 2020 09:14:42 -0600
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 27 Mar 2020 09:16:44 -0600
 
 pop-default-settings (3.0.3) eoan; urgency=medium
 

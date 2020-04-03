@@ -21,6 +21,13 @@ logo = ''
 sleep-inactive-ac-type = 'nothing'
 sleep-inactive-battery-type = 'nothing'
 
+[org.gnome.desktop.notifications]
+application-children = ['gnome-printers-panel']
+
+[org.gnome.desktop.notifications.application:/org/gnome/desktop/notifications/application/gnome-printers-panel/]
+application-id = 'gnome-printers-panel.desktop'
+enable = false
+
 ##########################
 # initial-setup settings #
 ##########################

@@ -87,7 +87,7 @@ case "$1" in
         if ! grep "${REPO}" /etc/apt/sources.list > /dev/null
         then
             echo "${ISO_KEY}" | apt-key add -
-            add-apt-repository --yes "${REPO}"
+            echo "${REPO}" >> /etc/apt/sources.list
         fi
         ;;
 

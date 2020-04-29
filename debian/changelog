@@ -1,3 +1,9 @@
+pop-default-settings (4.0.3) focal; urgency=medium
+
+  * Add LTS to version for 18.04, 20.04, and 22.04 
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 29 Apr 2020 13:28:22 -0600
+
 pop-default-settings (4.0.2) focal; urgency=medium
 
   * Do not use add-apt-repository to add proprietary repo

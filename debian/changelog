@@ -1,3 +1,9 @@
+pop-default-settings (4.0.4) focal; urgency=medium
+
+  * Migrate versioning
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 29 Apr 2020 16:59:47 -0600
+
 pop-default-settings (4.0.3) focal; urgency=medium
 
   * Add LTS to version for 18.04, 20.04, and 22.04 

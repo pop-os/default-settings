@@ -7,6 +7,8 @@ fi
 
 if command -v flatpak >/dev/null
 then
-    flatpak remote-add --user --if-not-exists flathub /etc/pop-os/flatpak/flathub.flatpakrepo &&
-    touch "${HOME}/.cache/pop-flatpak-repos"
+    flatpak remote-add --user --if-not-exists flathub /etc/pop-os/flatpak/flathub.flatpakrepo \
+        && flatpak install --user flathub org.gtk.Gtk3theme.Pop \
+        && flatpak install --user flathub org.gtk.Gtk3theme.Pop-dark \
+        && touch "${HOME}/.cache/pop-flatpak-repos"
 fi

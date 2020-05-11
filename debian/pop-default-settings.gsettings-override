@@ -49,7 +49,7 @@ titlebar-uses-system-font = false
 # Gedit Settings #
 ##################
 [org.gnome.gedit.preferences.editor]
-scheme = 'pop-light'
+scheme = 'pop-dark'
 
 #####################
 # Terminal settings #

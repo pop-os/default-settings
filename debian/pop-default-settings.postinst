@@ -83,6 +83,15 @@ case "$1" in
             fi
         done
 
+        shopt -s nullglob
+        for file in /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+        do
+            # Convert to apt.pop-os.org mirror, if using us.archive.ubuntu.com
+            sed -i 's|us.archive.ubuntu.com/ubuntu|apt.pop-os.org/ubuntu|' "${file}"
+            # Convert to apt.pop-os.org/release if using PPA
+            sed -i 's|ppa.launchpad.net/system76/pop/ubuntu|apt.pop-os.org/release|' "${file}"
+        done
+
         # Add Pop proprietary repo if it is missing.
         RELEASE="$(lsb_release -cs)"
         REPO="deb http://apt.pop-os.org/proprietary ${RELEASE} main"

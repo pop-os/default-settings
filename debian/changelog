@@ -1,3 +1,9 @@
+pop-default-settings (4.0.6) focal; urgency=medium
+
+  * Force Firefox acceleration
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 19 Aug 2020 11:58:52 -0600
+
 pop-default-settings (4.0.5) focal; urgency=medium
 
   * Pop!_OS style MOTD

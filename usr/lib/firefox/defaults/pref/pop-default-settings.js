@@ -1,2 +1,2 @@
-pref("layers.acceleration.force-enabled", true);
+pref("gfx.xrender.enabled", true);
 pref("widget.content.gtk-theme-override", "Pop");

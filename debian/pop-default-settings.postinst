@@ -68,6 +68,15 @@ fOyJI22NfTI+3SMAsMQ8L+WVQI+58bu7+iEqoEfHCXikE8BtTbJAN4Oob1lrjfOe
 -----END PGP PUBLIC KEY BLOCK-----
 "
 
+RELEASE="$(lsb_release -cs)"
+REPO="http://apt.pop-os.org/proprietary"
+SOURCE="X-Repolib-Name: Pop_OS Applications
+Enabled: yes
+Types: deb
+URIs: ${REPO}
+Suites: ${RELEASE}
+Components: main"
+
 case "$1" in
     configure)
         for divert in "${diverts[@]}"
@@ -84,12 +93,10 @@ case "$1" in
         done
 
         # Add Pop proprietary repo if it is missing.
-        RELEASE="$(lsb_release -cs)"
-        REPO="deb http://apt.pop-os.org/proprietary ${RELEASE} main"
-        if ! grep "${REPO}" /etc/apt/sources.list > /dev/null
+        if ! grep -r "${REPO}" /etc/apt/ > /dev/null
         then
             echo "${ISO_KEY}" | apt-key add -
-            echo "${REPO}" >> /etc/apt/sources.list
+            echo "${SOURCE}" > /etc/apt/sources.list.d/pop-os-apps.sources
         fi
         ;;
 

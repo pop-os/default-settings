@@ -109,11 +109,13 @@ case "$1" in
         fi
 
         # Convert system sources from one-line format to DEB822, if present
-        if grep "ubuntu.com" /etc/apt/sources.list # Generous matching, be more specific if found
+        # Generous matching, be more specific if found
+        if grep -e "ubuntu.com" -e "apt.pop-os.org/ubuntu" /etc/apt/sources.list 
         then
             # Remove system sources from sources.list
             sed -i '/.*archive.ubuntu.com.*$/d' /etc/apt/sources.list
             sed -i '/.*security.ubuntu.com.*$/d' /etc/apt/sources.list # Needed if this was added by software-properties
+            sed -i '/.*apt.pop-os.org/ubuntu.*$/d' /etc/apt/sources.list # Convert apt.pop-os.org as well.
         fi
         # Look for existing system sources, and create if not found
         if [ ! -f /etc/apt/sources.list.d/system.sources ]

@@ -94,7 +94,7 @@ case "$1" in
 
         # Add Pop proprietary repo if it is missing.
         shopt -s nullglob
-        if ! grep "${REPO}" /etc/apt/sources.list{,.d/*.list,.d/*.source}
+        if ! grep "${REPO}" /etc/apt/sources.list{,.d/*.list,.d/*.sources}
         then
             echo "${ISO_KEY}" | apt-key add -
             echo "${SOURCE}" > /etc/apt/sources.list.d/pop-os-apps.sources

@@ -77,6 +77,14 @@ URIs: ${REPO}
 Suites: ${RELEASE}
 Components: main"
 
+SYS_REPO="http://us.archive.ubuntu.com/ubuntu/"
+SYS_SOURCE="X-Repolib-Name: Pop_OS System Sources
+Enabled: yes
+Types: deb deb-src
+URIs: ${SYS_REPO}
+Suites: ${RELEASE} ${RELEASE}-security ${RELEASE}-updates ${RELEASE}-backports
+Components: main restricted universe multiverse"
+
 case "$1" in
     configure)
         for divert in "${diverts[@]}"
@@ -99,8 +107,20 @@ case "$1" in
             echo "${ISO_KEY}" | apt-key add -
             echo "${SOURCE}" > /etc/apt/sources.list.d/pop-os-apps.sources
         fi
-        ;;
 
+        # Convert system sources from one-line format to DEB822, if present
+        if grep "ubuntu.com" /etc/apt/sources.list # Generous matching, be more specific if found
+        then
+            # Remove system sources from sources.list
+            sed -i '/.*archive.ubuntu.com.*$/d' /etc/apt/sources.list
+            sed -i '/.*security.ubuntu.com.*$/d' /etc/apt/sources.list # Needed if this was added by software-properties
+        fi
+        # Look for existing system sources, and create if not found
+        if [ ! -f /etc/apt/sources.list.d/system.sources ]
+        then
+            echo "${SYS_SOURCE}" > /etc/apt/sources.list.d/system.sources
+        fi
+        ;;
     *)
         ;;
 esac

@@ -85,9 +85,9 @@ case "$1" in
 
         # Add Pop proprietary repo if it is missing.
         RELEASE="$(lsb_release -cs)"
-        REPO="deb http://apt.pop-os.org/proprietary ${RELEASE} main"
-        URI="http://apt.pop-os.org/proprietary"
-        if ! grep "${URI}" /etc/apt/sources.list > /dev/null
+        URL="http://apt.pop-os.org/proprietary"
+        REPO="deb ${URL} ${RELEASE} main"
+        if ! grep "${URL}" /etc/apt/sources.list > /dev/null
         then
             echo "${ISO_KEY}" | apt-key add -
             echo "${REPO}" >> /etc/apt/sources.list

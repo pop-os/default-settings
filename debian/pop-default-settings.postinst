@@ -113,9 +113,9 @@ case "$1" in
         if grep -e "ubuntu.com/ubuntu" -e "apt.pop-os.org/ubuntu" /etc/apt/sources.list 
         then
             # Remove system sources from sources.list
-            sed -i '/.*archive.ubuntu.com/ubuntu.*$/d' /etc/apt/sources.list
-            sed -i '/.*security.ubuntu.com/ubuntu.*$/d' /etc/apt/sources.list # Needed if this was added by software-properties
-            sed -i '/.*apt.pop-os.org/ubuntu.*$/d' /etc/apt/sources.list # Convert apt.pop-os.org as well.
+            sed -i '/.*archive.ubuntu.com\/ubuntu.*$/d' /etc/apt/sources.list
+            sed -i '/.*security.ubuntu.com\/ubuntu.*$/d' /etc/apt/sources.list # Needed if this was added by software-properties
+            sed -i '/.*apt.pop-os.org\/ubuntu.*$/d' /etc/apt/sources.list # Convert apt.pop-os.org as well.
         fi
         # Look for existing system sources, and create if not found
         if [ ! -f /etc/apt/sources.list.d/system.sources ]

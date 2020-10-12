@@ -78,6 +78,14 @@ URIs: ${REPO}
 Suites: ${RELEASE}
 Components: main"
 
+SYS_REPO="http://us.archive.ubuntu.com/ubuntu/"
+SYS_SOURCE="X-Repolib-Name: Pop_OS System Sources
+Enabled: yes
+Types: deb deb-src
+URIs: ${SYS_REPO}
+Suites: ${RELEASE} ${RELEASE}-security ${RELEASE}-updates ${RELEASE}-backports
+Components: main restricted universe multiverse"
+
 case "$1" in
     configure)
         for divert in "${diverts[@]}"
@@ -93,6 +101,14 @@ case "$1" in
             fi
         done
 
+        # Remove the proprietary source from sources.list, if it is present
+        # It will be re-added as a DEB822 source below
+        if grep "${REPO}" /etc/apt/sources.list
+        then
+            repo_replace=$(echo $REPO | sed 's|/|\\/|g')
+            sed -i "/${repo_replace}/d" /etc/apt/sources.list
+        fi
+
         # Add Pop proprietary repo if it is missing.
         shopt -s nullglob
         if ! grep "${REPO}" /etc/apt/sources.list{,.d/*.list,.d/*.sources}
@@ -100,8 +116,22 @@ case "$1" in
             echo "${ISO_KEY}" | apt-key add -
             echo "${SOURCE}" > /etc/apt/sources.list.d/pop-os-apps.sources
         fi
-        ;;
 
+        # Convert system sources from one-line format to DEB822, if present
+        # Generous matching, be more specific if found
+        if grep -e "ubuntu.com/ubuntu" -e "apt.pop-os.org/ubuntu" /etc/apt/sources.list 
+        then
+            # Remove system sources from sources.list
+            sed -i '/.*archive.ubuntu.com\/ubuntu.*$/d' /etc/apt/sources.list
+            sed -i '/.*security.ubuntu.com\/ubuntu.*$/d' /etc/apt/sources.list # Needed if this was added by software-properties
+            sed -i '/.*apt.pop-os.org\/ubuntu.*$/d' /etc/apt/sources.list # Convert apt.pop-os.org as well.
+        fi
+        # Look for existing system sources, and create if not found
+        if [ ! -f /etc/apt/sources.list.d/system.sources ]
+        then
+            echo "${SYS_SOURCE}" > /etc/apt/sources.list.d/system.sources
+        fi
+        ;;
     *)
         ;;
 esac

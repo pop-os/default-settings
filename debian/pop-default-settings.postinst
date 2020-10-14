@@ -84,7 +84,8 @@ Enabled: yes
 Types: deb deb-src
 URIs: ${SYS_REPO}
 Suites: ${RELEASE} ${RELEASE}-security ${RELEASE}-updates ${RELEASE}-backports
-Components: main restricted universe multiverse"
+Components: main restricted universe multiverse
+X-Repolib-Default-Mirror: ${SYS_REPO}"
 
 case "$1" in
     configure)
@@ -131,6 +132,9 @@ case "$1" in
         then
             echo "${SYS_SOURCE}" > /etc/apt/sources.list.d/system.sources
         fi
+
+        # Set the Vendor-recommended default mirror:
+        apt-manage modify system --default-mirror "${SYS_REPO}"
         ;;
     *)
         ;;

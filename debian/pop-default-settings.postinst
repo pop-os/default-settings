@@ -6,6 +6,11 @@ set -e
 package=pop-default-settings
 diverts=(
     "/etc/gdm3/custom.conf=/etc/pop-os/gdm3/custom.conf"
+    "/etc/issue=/etc/pop-os/issue"
+    "/etc/issue.net=/etc/pop-os/issue.net"
+    "/etc/legal=/etc/pop-os/legal"
+    "/etc/update-motd.d/10-help-text=/etc/pop-os/update-motd.d/10-help-text"
+    "/etc/update-motd.d/50-motd-news=/etc/pop-os/update-motd.d/50-motd-news"
     "/etc/lsb-release=/etc/pop-os/lsb-release"
     "/etc/os-release=/etc/pop-os/os-release"
     "/usr/lib/os-release=/etc/pop-os/os-release"
@@ -81,11 +86,12 @@ case "$1" in
 
         # Add Pop proprietary repo if it is missing.
         RELEASE="$(lsb_release -cs)"
-        REPO="deb http://apt.pop-os.org/proprietary ${RELEASE} main"
-        if ! grep "${REPO}" /etc/apt/sources.list > /dev/null
+        URL="http://apt.pop-os.org/proprietary"
+        REPO="deb ${URL} ${RELEASE} main"
+        if ! grep "${URL}" /etc/apt/sources.list > /dev/null
         then
             echo "${ISO_KEY}" | apt-key add -
-            add-apt-repository --yes "${REPO}"
+            echo "${REPO}" >> /etc/apt/sources.list
         fi
         ;;
 

@@ -6,7 +6,10 @@
 favorite-apps = ['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'io.elementary.appcenter.desktop', 'io.elementary.installer.desktop']
 
 [org.gnome.desktop.background]
-picture-uri = 'file:///usr/share/backgrounds/pop/kate-hazen-unleash-your-robot-blue.png'
+picture-uri = 'file:///usr/share/backgrounds/pop/kate-hazen-pop-retro1.png'
+
+[org.gnome.desktop.privacy]
+report-technical-problems = false
 
 [org.gnome.desktop.screensaver]
 picture-uri = 'file:///usr/share/backgrounds/pop/kate-hazen-mort1mer.png'
@@ -25,7 +28,7 @@ sleep-inactive-battery-type = 'nothing'
 # initial-setup settings #
 ##########################
 [org.gnome.desktop.interface:GNOME-Greeter]
-gtk-theme = "Pop"
+gtk-theme = "Pop-dark"
 icon-theme = "Pop"
 cursor-theme = "Pop"
 font-name = "Fira Sans Semi-Light 10"
@@ -33,6 +36,9 @@ document-font-name = "Roboto Slab 11"
 monospace-font-name = "Fira Mono 11"
 clock-show-date=true
 clock-format = '12h'
+
+[org.gnome.desktop.sound:GNOME-Greeter]
+theme-name = "Pop"
 
 [org.gnome.desktop.wm.preferences:GNOME-Greeter]
 theme = "Pop"
@@ -43,7 +49,7 @@ titlebar-uses-system-font = false
 # Gedit Settings #
 ##################
 [org.gnome.gedit.preferences.editor]
-scheme = 'pop-light'
+scheme = 'pop-dark'
 
 #####################
 # Terminal settings #

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo
+echo " * Homepage: https://pop.system76.com"
+echo " * Support:  https://support.system76.com"
+echo

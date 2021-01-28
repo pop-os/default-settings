@@ -1,3 +1,53 @@
+pop-default-settings (4.0.6) focal; urgency=medium
+
+  * Force Firefox acceleration
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 19 Aug 2020 11:58:52 -0600
+
+pop-default-settings (4.0.5) focal; urgency=medium
+
+  * Pop!_OS style MOTD
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 01 Jul 2020 08:27:32 -0600
+
+pop-default-settings (4.0.4) focal; urgency=medium
+
+  * Migrate versioning
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 29 Apr 2020 16:59:47 -0600
+
+pop-default-settings (4.0.3) focal; urgency=medium
+
+  * Add LTS to version for 18.04, 20.04, and 22.04 
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 29 Apr 2020 13:28:22 -0600
+
+pop-default-settings (4.0.2) focal; urgency=medium
+
+  * Do not use add-apt-repository to add proprietary repo
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 27 Apr 2020 18:36:34 -0600
+
+pop-default-settings (4.0.1) focal; urgency=medium
+
+  * Set /etc/issue and /etc/issue.net
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 27 Mar 2020 14:05:46 -0600
+
+pop-default-settings (4.0.0) focal; urgency=medium
+
+  * Focal release
+  * Default to dark theme
+  * Update default background
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 27 Mar 2020 09:16:44 -0600
+
+pop-default-settings (3.0.3) eoan; urgency=medium
+
+  * Set sound theme
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 16 Oct 2019 11:19:49 -0600
+
 pop-default-settings (3.0.2) cosmic; urgency=medium
 
   * 18.10 is not an LTS

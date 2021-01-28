@@ -1,0 +1,29 @@
+#!/bin/sh
+
+CACHE_PATH="${HOME}/.cache/pop-flatpak-repos"
+
+if [ -e "${CACHE_PATH}" ]
+then
+    CACHE_VERSION="$(cat "${CACHE_PATH}")"
+    if [ -z "${CACHE_VERSION}" ]
+    then
+        CACHE_VERSION="0"
+    fi
+else
+    CACHE_VERSION="0"
+fi
+
+if [ "${CACHE_VERSION}" -lt "1" ]
+then
+
+if command -v flatpak >/dev/null
+then
+    flatpak remote-add --user --if-not-exists flathub /etc/pop-os/flatpak/flathub.flatpakrepo \
+        && flatpak install --user flathub org.gtk.Gtk3theme.Pop \
+        && flatpak install --user flathub org.gtk.Gtk3theme.Pop-dark \
+        && touch "${HOME}/.cache/pop-flatpak-repos"
+fi
+
+fi
+
+echo "1" > "${CACHE_PATH}"

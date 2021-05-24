@@ -1,2 +1,3 @@
+usr/share/distro-info/ubuntu.csv usr/share/distro-info/pop.csv
 usr/share/python-apt/templates/Ubuntu.info usr/share/python-apt/templates/Pop.info
 usr/share/python-apt/templates/Ubuntu.mirrors usr/share/python-apt/templates/Pop.mirrors

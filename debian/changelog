@@ -1,3 +1,9 @@
+pop-default-settings (5.0.0) hirsute; urgency=medium
+
+  * Add distro-info link
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 24 May 2021 10:56:35 -0600
+
 pop-default-settings (4.0.6) focal; urgency=medium
 
   * Force Firefox acceleration

@@ -2,9 +2,6 @@
 # global settings #
 ###################
 
-[org.gnome.shell]
-favorite-apps = ['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'io.elementary.appcenter.desktop', 'io.elementary.installer.desktop']
-
 [org.gnome.desktop.background]
 picture-uri = 'file:///usr/share/backgrounds/pop/kate-hazen-pop-retro1.png'
 

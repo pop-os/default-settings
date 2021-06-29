@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 CACHE_PATH="${HOME}/.cache/pop-app-folders"
 
@@ -122,5 +122,59 @@ gsettings set "${APP_FOLDER}-Utility/" apps "[
 ]"
 
 echo "2" > "${CACHE_PATH}"
+
+fi
+
+if [ "${CACHE_VERSION}" -lt "3" ]
+then
+
+echo "Migrating to version 3"
+
+# List of cosmic favorites
+COSMIC_FAVORITES=(
+	"pop-cosmic-launcher.desktop"
+	"pop-cosmic-workspaces.desktop"
+	"pop-cosmic-applications.desktop"
+)
+
+# Read favorites from gsettings and decode into array
+mapfile -t CURRENT_FAVORITES < <(
+	gsettings get org.gnome.shell favorite-apps \
+	| sed "s/^\\['//" \
+	| sed "s/'\\]$//" \
+	| sed "s/', '/\n/g"
+)
+
+# Add cosmic favorites to the beginning and remove from other locations
+FAVORITES=("${COSMIC_FAVORITES[@]}")
+for current in "${CURRENT_FAVORITES[@]}"
+do
+	found="0"
+	for cosmic in "${COSMIC_FAVORITES[@]}"
+	do
+		if [ "${current}" == "${cosmic}" ]
+		then
+			found="1"
+		fi
+	done
+	if [ "${found}" == "0" ]
+	then
+		FAVORITES+=("${current}")
+	fi
+done
+
+# Encode favorites as a string and write to gsettings
+FAVORITES_STR=""
+for favorite in "${FAVORITES[@]}"
+do
+	if [ -n "${FAVORITES_STR}" ]
+	then
+		FAVORITES_STR+=", "
+	fi
+	FAVORITES_STR+="'${favorite}'"
+done
+gsettings set org.gnome.shell favorite-apps "[${FAVORITES_STR}]"
+
+echo "3" > "${CACHE_PATH}"
 
 fi

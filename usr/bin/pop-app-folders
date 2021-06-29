@@ -124,3 +124,20 @@ gsettings set "${APP_FOLDER}-Utility/" apps "[
 echo "2" > "${CACHE_PATH}"
 
 fi
+
+if [ "${CACHE_VERSION}" -lt "3" ]
+then
+
+echo "Migrating to version 3"
+
+# If `dconf read` returns nothing, there is no entry in the user's dconf
+# database, so gsettings will just use the system default
+if [ ! -z "$(dconf read /org/gnome/shell/favorite-apps)" ]
+then
+    # Otherwise if user has set favorites, prepend Cosmic favorites
+    pop-cosmic-favorites
+fi
+
+echo "3" > "${CACHE_PATH}"
+
+fi

@@ -1,0 +1,17 @@
+#!/usr/bin/env gjs
+
+const Gio = imports.gi.Gio;
+
+const COSMIC_FAVORITES = [
+    "pop-cosmic-applications.desktop",
+    "pop-cosmic-workspaces.desktop",
+    "pop-cosmic-launcher.desktop",
+];
+
+const settings = new Gio.Settings({schema_id: "org.gnome.shell"});
+let favorites = settings.get_strv("favorite-apps");
+COSMIC_FAVORITES.forEach(favorite => {
+    if (!favorites.includes(favorite))
+        favorites.unshift(favorite);
+});
+settings.set_strv("favorite-apps", favorites);

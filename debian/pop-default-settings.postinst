@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+shopt -s nullglob
 
 # Make sure this is in sync with prerm
 package=pop-default-settings
@@ -70,11 +71,11 @@ fOyJI22NfTI+3SMAsMQ8L+WVQI+58bu7+iEqoEfHCXikE8BtTbJAN4Oob1lrjfOe
 "
 
 RELEASE="$(lsb_release -cs)"
-REPO="http://apt.pop-os.org/proprietary"
-SOURCE="X-Repolib-Name: Pop_OS Applications
+PROPRIETARY_REPO="http://apt.pop-os.org/proprietary"
+PROPRIETARY_SOURCE="X-Repolib-Name: Pop_OS Applications
 Enabled: yes
 Types: deb
-URIs: ${REPO}
+URIs: ${PROPRIETARY_REPO}
 Suites: ${RELEASE}
 Components: main"
 
@@ -104,23 +105,22 @@ case "$1" in
 
         # Remove the proprietary source from sources.list, if it is present
         # It will be re-added as a DEB822 source below
-        if grep "${REPO}" /etc/apt/sources.list
+        if grep "${PROPRIETARY_REPO}" /etc/apt/sources.list
         then
-            repo_replace=$(echo $REPO | sed 's|/|\\/|g')
+            repo_replace="$(echo "${PROPRIETARY_REPO}" | sed 's|/|\\/|g')"
             sed -i "/${repo_replace}/d" /etc/apt/sources.list
         fi
 
         # Add Pop proprietary repo if it is missing.
-        shopt -s nullglob
-        if ! grep "${REPO}" /etc/apt/sources.list{,.d/*.list,.d/*.sources}
+        if ! grep "${PROPRIETARY_REPO}" /etc/apt/sources.list{,.d/*.list,.d/*.sources}
         then
             echo "${ISO_KEY}" | apt-key add -
-            echo "${SOURCE}" > /etc/apt/sources.list.d/pop-os-apps.sources
+            echo "${PROPRIETARY_SOURCE}" > /etc/apt/sources.list.d/pop-os-apps.sources
         fi
 
         # Convert system sources from one-line format to DEB822, if present
         # Generous matching, be more specific if found
-        if grep -e "ubuntu.com/ubuntu" -e "apt.pop-os.org/ubuntu" /etc/apt/sources.list 
+        if grep -e "ubuntu.com/ubuntu" -e "apt.pop-os.org/ubuntu" /etc/apt/sources.list
         then
             # Remove system sources from sources.list
             sed -i '/.*archive.ubuntu.com\/ubuntu.*$/d' /etc/apt/sources.list

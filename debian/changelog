@@ -1,3 +1,9 @@
+pop-default-settings (5.1.0) impish; urgency=medium
+
+  * Use apt.pop-os.org/release for main Pop!_OS repository
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 19 Aug 2021 08:52:52 -0600
+
 pop-default-settings (5.0.0) hirsute; urgency=medium
 
   * Add distro-info link

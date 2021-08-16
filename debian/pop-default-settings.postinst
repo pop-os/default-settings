@@ -133,6 +133,13 @@ case "$1" in
             echo "${SYS_SOURCE}" > /etc/apt/sources.list.d/system.sources
         fi
 
+        # Convert to apt.pop-os.org/release if using PPA
+        for file in /etc/apt/sources.list{,.d/*.list,.d/*.sources}
+        do
+            # Convert to apt.pop-os.org/release if using PPA
+            sed -i 's|ppa.launchpad.net/system76/pop/ubuntu|apt.pop-os.org/release|' "${file}"
+        done
+
         # Set the Vendor-recommended default mirror:
         apt-manage modify system --default-mirror "${SYS_REPO}"
         ;;

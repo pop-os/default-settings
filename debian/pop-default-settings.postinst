@@ -97,6 +97,11 @@ case "$1" in
 
             dpkg-divert --add --package pop-default-settings --rename --divert "$source.diverted" "$source"
 
+            if [ ! -e "$(dirname "$source")" ]
+            then
+                mkdir --parents "$(dirname "$source")"
+            fi
+
             if [ -L "$source" -o ! -e "$source" ]
             then
                 ln --force --relative --symbolic "$dest" "$source"

@@ -1,6 +1,6 @@
 Source: pop-default-settings
-Section: x11
-Priority: optional
+Section: metapackages
+Priority: required
 Maintainer: Jeremy Soller <jeremy@system76.com>
 Uploaders: Ian Santopietro <ian@system76.com>
 Build-Depends: debhelper (>= 10)
@@ -9,6 +9,7 @@ Homepage: https://github.com/system76/pop-default-settings
 
 Package: pop-default-settings
 Architecture: all
+Essential: yes
 Depends: ${misc:Depends},
          base-files (>= 10),
          gnome-menus,

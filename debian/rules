@@ -1,8 +1,5 @@
 #!/usr/bin/make -f
 
-override_dh_installgsettings:
-	dh_installgsettings --priority=50
-
 override_dh_installdeb:
 	dh_installdeb
 	cp debian/conffiles debian/pop-default-settings/DEBIAN/conffiles

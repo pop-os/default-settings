@@ -16,5 +16,7 @@ Depends: ${misc:Depends},
          gnupg,
          plymouth-theme-pop-basic,
          python3-repolib (>> 1.3.9),
+         ubuntu-minimal,
+         ubuntu-standard,
 Description: default settings for Pop OS
  This package contains the default settings used by Pop.

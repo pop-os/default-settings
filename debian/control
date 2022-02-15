@@ -14,11 +14,12 @@ Depends: ${misc:Depends},
          libglib2.0-bin,
          gnome-menus,
          gnupg,
-         plymouth-theme-pop-basic,
          pop-session,
          pop-theme,
          pop-wallpapers,
          software-properties-common,
          python3-repolib (>> 1.3.9),
+Recommends:
+         pop-plymouth-theme,
 Description: default settings for the Pop desktop
  This package contains the default settings used by Pop.

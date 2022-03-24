@@ -141,3 +141,18 @@ fi
 echo "3" > "${CACHE_PATH}"
 
 fi
+
+
+if [ "${CACHE_VERSION}" -lt "4" ]
+then
+
+echo "Migrating to version 4"
+
+# Create PopLaunch1 Keyboard Shortcut
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/ name "WiFi"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/ binding "Launch1"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/ command "gnome-control-center wifi"
+
+echo "4" > "${CACHE_PATH}"
+
+fi

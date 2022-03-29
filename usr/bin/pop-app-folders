@@ -142,7 +142,6 @@ echo "3" > "${CACHE_PATH}"
 
 fi
 
-
 if [ "${CACHE_VERSION}" -lt "4" ]
 then
 
@@ -154,5 +153,24 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/ command "gnome-control-center wifi"
 
 echo "4" > "${CACHE_PATH}"
+
+fi
+
+if [ "${CACHE_VERSION}" -lt "5" ]
+then
+
+echo "Migrating to version 5"
+
+# Set org.gnome.desktop.interface color-scheme based on current theme
+case "$(gsettings get org.gnome.desktop.interface gtk-theme)" in
+	"'Pop'")
+		gsettings set org.gnome.desktop.interface color-scheme "'prefer-light'"
+		;;
+	"'Pop-dark'")
+		gsettings set org.gnome.desktop.interface color-scheme "'prefer-dark'"
+		;;
+esac
+
+echo "5" > "${CACHE_PATH}"
 
 fi

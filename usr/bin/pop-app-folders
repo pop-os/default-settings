@@ -174,3 +174,21 @@ esac
 echo "5" > "${CACHE_PATH}"
 
 fi
+
+
+if [ "${CACHE_VERSION}" -lt "6" ]
+then
+
+echo "Migrating to version 6"
+
+# Set dark background to light background if light is set and dark is not set
+PICTURE_URI="$(dconf read /org/gnome/desktop/background/picture-uri)"
+PICTURE_URI_DARK="$(dconf read /org/gnome/desktop/background/picture-uri-dark)"
+if [ ! -z "${PICTURE_URI}" -a -z "${PICTURE_URI_DARK}" ]
+then
+    dconf write /org/gnome/desktop/background/picture-uri-dark "${PICTURE_URI}"
+fi
+
+echo "6" > "${CACHE_PATH}"
+
+fi

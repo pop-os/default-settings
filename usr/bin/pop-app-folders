@@ -175,7 +175,6 @@ echo "5" > "${CACHE_PATH}"
 
 fi
 
-
 if [ "${CACHE_VERSION}" -lt "6" ]
 then
 
@@ -190,5 +189,17 @@ then
 fi
 
 echo "6" > "${CACHE_PATH}"
+
+fi
+
+if [ "${CACHE_VERSION}" -lt "7" ]
+then
+
+echo "Migrating to version 7"
+
+# Default Input volume is too loud. Reduce to 30%
+pactl set-source-volume $(pactl get-default-source) 30%
+
+echo "7" > "${CACHE_PATH}"
 
 fi

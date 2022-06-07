@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+#TODO: save rfkill state?
+case "$2" in
+    suspend | hybrid-sleep)
+        case "$1" in
+            pre)
+				rfkill block bluetooth
+                ;;
+            post)
+				rfkill unblock bluetooth
+                ;;
+        esac
+        ;;
+esac

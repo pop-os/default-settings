@@ -33,6 +33,13 @@ case "$1" in
                 dpkg-divert --remove --package "$package" --rename --divert "$source.diverted" "$source"
             fi
         done
+
+        shopt -s nullglob
+        for file in /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+        do
+            # Convert to us.archive.ubuntu.com if using apt.pop-os.org mirror
+            sed -i 's|apt.pop-os.org/ubuntu|us.archive.ubuntu.com/ubuntu|' "$file"
+        done
         ;;
 
     *)

@@ -2,15 +2,19 @@
 
 set -e
 
-#TODO: save rfkill state?
 case "$2" in
     suspend | hybrid-sleep)
         case "$1" in
             pre)
-				rfkill block bluetooth
+                if [ $(cat /var/lib/systemd/rfkill/*bluetooth) -eq 1 ]; then
+                    > /home/$USER/blocked.bt
+                elif [ $(cat /var/lib/systemd/rfkill/*bluetooth) -eq 0 ]; then
+                    rfkill block bluetooth
+                fi
                 ;;
             post)
-				rfkill unblock bluetooth
+                test ! -f /home/$USER/blocked.bt && rfkill unblock bluetooth
+                rm /home/$USER/blocked.bt
                 ;;
         esac
         ;;

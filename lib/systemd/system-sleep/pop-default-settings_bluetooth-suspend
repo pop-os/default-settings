@@ -2,19 +2,26 @@
 
 set -e
 
+BT_BLOCK_PATH=/run/bluetooth.blocked
+BT_STATES_PATH=/var/lib/systemd/rfkill/
+BT_TMP_PATH=/tmp/
+
 case "$2" in
     suspend | hybrid-sleep)
         case "$1" in
             pre)
-                if [ $(cat /var/lib/systemd/rfkill/*bluetooth) -eq 1 ]; then
-                    > /home/$USER/blocked.bt
-                elif [ $(cat /var/lib/systemd/rfkill/*bluetooth) -eq 0 ]; then
+                if rfkill -o ID,TYPE,SOFT | grep -q -E 'bluetooth\s+unblocked'; then
+                    cp "$BT_STATES_PATH"*bluetooth "$BT_TMP_PATH"
                     rfkill block bluetooth
+                else
+                    > "$BT_BLOCK_PATH"
                 fi
                 ;;
             post)
-                test ! -f /home/$USER/blocked.bt && rfkill unblock bluetooth
-                rm /home/$USER/blocked.bt
+                cp -f "$BT_TMP_PATH"*bluetooth "$BT_STATES_PATH" 2> /dev/null
+                [ ! -f "$BT_BLOCK_PATH" ] && rfkill unblock bluetooth
+                rm "$BT_BLOCK_PATH" 2> /dev/null
+                rm "$BT_TMP_PATH"*bluetooth 2> /dev/null
                 ;;
         esac
         ;;

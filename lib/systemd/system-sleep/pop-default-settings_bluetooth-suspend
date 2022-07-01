@@ -20,8 +20,8 @@ case "$2" in
             post)
                 cp -f "$BT_TMP_PATH"*bluetooth "$BT_STATES_PATH" 2> /dev/null
                 [ ! -f "$BT_BLOCK_PATH" ] && rfkill unblock bluetooth
-                rm "$BT_BLOCK_PATH" 2> /dev/null
-                rm "$BT_TMP_PATH"*bluetooth 2> /dev/null
+                rm -f "$BT_BLOCK_PATH" 2> /dev/null
+                rm -f "$BT_TMP_PATH"*bluetooth 2> /dev/null
                 ;;
         esac
         ;;

@@ -190,17 +190,12 @@ then
 fi
 
 # Title 20 Compliance requires a display off setting of 5 minutes, and suspend of 30 minutes.
-# This is only for systems shipped by a company, so we need to check if the manufacturer is system76,
-# and if so set the suspend time to 30 minutes. This change is deliberatly done as part of
-# $CACHE_VERSION 6, and not as its own step so that existing Pop!_OS installs are not modified,
-# But new installs in the future are.
-if grep -q System76 /sys/devices/virtual/dmi/id/sys_vendor
-then
-    gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type suspend
-    gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 1800
-    gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type suspend
-    gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 1800
-fi
+# This change is deliberatly done as part of $CACHE_VERSION 6, and not as its own step so
+# that existing Pop!_OS installs are not modified, but new installs in the future are.
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type suspend
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 1800
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type suspend
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 1800
 
 echo "6" > "${CACHE_PATH}"
 

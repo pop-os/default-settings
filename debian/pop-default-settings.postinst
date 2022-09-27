@@ -79,7 +79,7 @@ URIs: ${PROPRIETARY_REPO}
 Suites: ${RELEASE}
 Components: main"
 
-SYS_REPO="http://us.archive.ubuntu.com/ubuntu/"
+SYS_REPO="http://apt.pop-os.org/ubuntu"
 SYS_SOURCE="X-Repolib-Name: Pop_OS System Sources
 Enabled: yes
 Types: deb deb-src

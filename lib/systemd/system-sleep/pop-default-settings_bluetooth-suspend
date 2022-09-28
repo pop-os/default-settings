@@ -19,7 +19,7 @@ case "$2" in
                 ;;
             post)
                 cp -f "$BT_TMP_PATH"*bluetooth "$BT_STATES_PATH" 2> /dev/null
-                [ ! -f "$BT_BLOCK_PATH" ] && rfkill unblock bluetooth
+                [ ! -f "$BT_BLOCK_PATH" ] && sleep 1 && rfkill unblock bluetooth
                 rm -f "$BT_BLOCK_PATH" 2> /dev/null
                 rm -f "$BT_TMP_PATH"*bluetooth 2> /dev/null
                 ;;

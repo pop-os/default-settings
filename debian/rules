@@ -1,8 +1,4 @@
 #!/usr/bin/make -f
 
-override_dh_installdeb:
-	dh_installdeb
-	cp debian/conffiles debian/pop-default-settings/DEBIAN/conffiles
-
 %:
 	dh $@

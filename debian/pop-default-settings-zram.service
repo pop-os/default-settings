@@ -1,0 +1,9 @@
+[Unit]
+Description=Auto-configure and enable zram on Pop
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/pop-zram-config
+
+[Install]
+WantedBy=multi-user.target

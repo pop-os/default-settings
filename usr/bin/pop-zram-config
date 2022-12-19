@@ -61,3 +61,10 @@ swapon -p 1000 /dev/zram0
 
 # Apply optimal sysctl values for the zram environment.
 sysctl -w "vm.page-cluster=${PAGE_CLUSTERS}" "vm.swappiness=${SWAPPINESS}"
+
+# Ensure at least 1% of total memory is free to avoid system freeze.
+MINIMUM=$(awk '/MemTotal/ {printf "%.0f", $2 * 0.01}' /proc/meminfo)
+CURRENT=$(sysctl vm.min_free_kbytes | awk '{print $3}')
+if ((MINIMUM > CURRENT)); then
+    sysctl -w "vm.min_free_kbytes=${MINIMUM}"
+fi

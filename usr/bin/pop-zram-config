@@ -15,17 +15,17 @@ fi
 # Default to compress with zstd, which has an average compression ratio of 3.37.
 test -n "${ALGO}" || ALGO=zstd
 
-# Default to 8192M as max zram block size.
-test -n "${MAX_SIZE}" || MAX_SIZE=8192
+# Max amount of uncompressed RAM that should be compressed.
+test -n "${MAX_SIZE}" || MAX_SIZE=16384
 
 # Higher values encourage the kernel to be more eager to move pages to swap.
 test -n "${SWAPPINESS}" || SWAPPINESS=180
 
-# Amount of memory to use for zram, from 1 to 100.
-test -n "${PORTION}" || PORTION=50
+# Amount of memory to use for zram, from 1 to 200
+test -n "${PORTION}" || PORTION=100
 
-if ((PORTION > 100)); then
-    PORTION=100
+if ((PORTION > 200)); then
+    PORTION=200
 elif ((PORTION < 1)); then
     PORTION=1
 fi
@@ -41,7 +41,7 @@ test -n "${PAGE_CLUSTERS}" || PAGE_CLUSTERS=$(test zstd = ${ALGO} && echo 0 || e
 # Total amount of memory accessible to the OS.
 TOTAL=$(awk -v p=${PORTION} '/MemTotal/ {printf "%.0f", p * $2 / 102400}' /proc/meminfo)
 
-# The recommended size is `max(mem_total / 2, 8GB)`.
+# Ensure that the size is not greater than the max size.
 SIZE=$(((TOTAL > MAX_SIZE)) && echo ${MAX_SIZE} || echo ${TOTAL})
 
 # Load the zram module.

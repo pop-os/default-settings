@@ -1,3 +1,16 @@
+debian/
+!debian/*.install
+!debian/*.links
+!debian/*.postinst
+!debian/*.postrm
+!debian/*.prerm
+!debian/*.service
+!debian/changelog
+!debian/compat
+!debian/copyright
+!debian/rules
+!debian/source/
+
 etc/pop-os/issue
 etc/pop-os/issue.net
 etc/pop-os/lsb-release

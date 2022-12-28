@@ -1,0 +1,2 @@
+etc/default/pop-zram
+usr/bin/pop-zram-config

@@ -1,0 +1,67 @@
+#!/bin/bash
+# Copyright 2022 System76 <info@system76.com>
+# SPDX-License-Identifier: GPL-3.0-only
+
+# If a zram device already exists, ignore
+test -b /dev/zram0 && exit 0
+
+ENV_CONF='/etc/pop-zram'
+
+# Load user-defined variabls if a config exists
+if test -f ${ENV_CONF}; then
+    export $(grep -v '^#' ${ENV_CONF} | xargs)
+fi
+
+# Default to compress with zstd, which has an average compression ratio of 3.37.
+test -n "${ALGO}" || ALGO=zstd
+
+# Max amount of uncompressed RAM that should be compressed.
+test -n "${MAX_SIZE}" || MAX_SIZE=16384
+
+# Higher values encourage the kernel to be more eager to move pages to swap.
+test -n "${SWAPPINESS}" || SWAPPINESS=180
+
+# Amount of memory to use for zram, from 1 to 200
+test -n "${PORTION}" || PORTION=100
+
+if ((PORTION > 200)); then
+    PORTION=200
+elif ((PORTION < 1)); then
+    PORTION=1
+fi
+
+# Number of consecutive pages to read in advance. Higher values increase compression
+# for zram devices, but at the cost of significantly reduced IOPS and higher latency.
+# It is highly recommended to use 0 for zstd; and 1 for speedier algorithms.
+test -n "${PAGE_CLUSTERS}" || PAGE_CLUSTERS=$(test zstd = ${ALGO} && echo 0 || echo 1)
+
+# Total amount of memory accessible to the OS.
+TOTAL=$(awk -v p=${PORTION} '/MemTotal/ {printf "%.0f", p * $2 / 102400}' /proc/meminfo)
+
+# Ensure that the size is not greater than the max size.
+SIZE=$(((TOTAL > MAX_SIZE)) && echo ${MAX_SIZE} || echo ${TOTAL})
+
+# Load the zram module.
+modprobe zram num_devices=1
+udevadm settle -t 1
+
+# Create it with our desired size and compression algorithm
+zramctl --size "${SIZE}M" --algorithm "${ALGO}" /dev/zram0
+
+# Format it as a swap partition
+mkswap /dev/zram0
+udevadm settle -t 1
+
+# Activate the zram device with a priority of 1000.
+# This device should have a higher priority than disk-based swap.
+swapon -p 1000 /dev/zram0
+
+# Apply optimal sysctl values for the zram environment.
+sysctl -w "vm.page-cluster=${PAGE_CLUSTERS}" "vm.swappiness=${SWAPPINESS}"
+
+# Ensure at least 1% of total memory is free to avoid system freeze.
+MINIMUM=$(awk '/MemTotal/ {printf "%.0f", $2 * 0.01}' /proc/meminfo)
+CURRENT=$(sysctl vm.min_free_kbytes | awk '{print $3}')
+if ((MINIMUM > CURRENT)); then
+    sysctl -w "vm.min_free_kbytes=${MINIMUM}"
+fi

@@ -1,0 +1,8 @@
+# Default to 16384M as max zram block size.
+MAX_SIZE=16384
+# Amount of memory to use for zram, from 1 to 200.
+PORTION=100
+# Default to compress with zstd, which has an average compression ratio of 3.37.
+ALGO=zstd
+# Higher values encourage the kernel to be more eager to move pages to swap.
+SWAPPINESS=180

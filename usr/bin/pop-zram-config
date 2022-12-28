@@ -36,23 +36,20 @@ fi
 test -n "${PAGE_CLUSTERS}" || PAGE_CLUSTERS=$(test zstd = ${ALGO} && echo 0 || echo 1)
 
 # Total amount of memory accessible to the OS.
-test -n "${PAGE_CLUSTERS}" || PAGE_CLUSTERS=$(test zstd = ${ALGO} && echo 0 || echo 1)
-
-# Total amount of memory accessible to the OS.
 TOTAL=$(awk -v p=${PORTION} '/MemTotal/ {printf "%.0f", p * $2 / 102400}' /proc/meminfo)
 
 # Ensure that the size is not greater than the max size.
 SIZE=$(((TOTAL > MAX_SIZE)) && echo ${MAX_SIZE} || echo ${TOTAL})
 
 # Load the zram module.
-modprobe zram num_devices=1 && sync
+modprobe zram num_devices=1
 udevadm settle -t 1
 
 # Create it with our desired size and compression algorithm
 zramctl --size "${SIZE}M" --algorithm "${ALGO}" /dev/zram0
 
 # Format it as a swap partition
-mkswap /dev/zram0 && sync
+mkswap /dev/zram0
 udevadm settle -t 1
 
 # Activate the zram device with a priority of 1000.

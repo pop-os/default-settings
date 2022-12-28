@@ -46,14 +46,14 @@ SIZE=$(((TOTAL > MAX_SIZE)) && echo ${MAX_SIZE} || echo ${TOTAL})
 
 # Load the zram module.
 modprobe zram num_devices=1 && sync
-sleep 1
+udevadm settle -t 1
 
 # Create it with our desired size and compression algorithm
 zramctl --size "${SIZE}M" --algorithm "${ALGO}" /dev/zram0
 
 # Format it as a swap partition
 mkswap /dev/zram0 && sync
-sleep 1
+udevadm settle -t 1
 
 # Activate the zram device with a priority of 1000.
 # This device should have a higher priority than disk-based swap.

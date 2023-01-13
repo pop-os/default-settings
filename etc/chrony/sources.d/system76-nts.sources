@@ -1,5 +1,5 @@
-server virginia.time.system76.com iburst nts
-server ohio.time.system76.com iburst nts
-server oregon.time.system76.com iburst nts
-server paris.time.system76.com iburst nts
-server brazil.time.system76.com iburst nts
+server virginia.time.system76.com iburst nts prefer trust
+server ohio.time.system76.com iburst nts prefer trust
+server oregon.time.system76.com iburst nts prefer trust
+server paris.time.system76.com iburst nts prefer trust
+server brazil.time.system76.com iburst nts prefer trust

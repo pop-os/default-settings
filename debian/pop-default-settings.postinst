@@ -90,6 +90,9 @@ X-Repolib-Default-Mirror: ${SYS_REPO}"
 
 case "$1" in
     configure)
+        # Remove Ubuntu Pro advertisement
+        rm -f /etc/apt/apt.conf.d/20apt-esm-hook.conf
+
         for divert in "${diverts[@]}"
         do
             source="${divert%%=*}"

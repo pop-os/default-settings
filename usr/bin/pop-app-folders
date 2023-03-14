@@ -95,13 +95,18 @@ esac
 
 echo "1" > "${CACHE_PATH}"
 
-str1=$(pro config show | grep -w 'apt_news' | awk '{print $2}')
-str2="False"
-
-if [ "$str1" = "$str2" ]; then
-    exit
-else
-    $(sudo pro config set apt_news=false)
 fi
+
+if [ "${CACHE_VERSION}" -lt "1" ]
+then
+
+    str1=$(pro config show | grep -w 'apt_news' | awk '{print $2}')
+    str2="False"
+
+    if [ "$str1" = "$str2" ]; then
+        exit
+    else
+        $(sudo pro config set apt_news=false)
+    fi
 
 fi

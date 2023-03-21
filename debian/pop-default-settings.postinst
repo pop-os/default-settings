@@ -71,6 +71,9 @@ fOyJI22NfTI+3SMAsMQ8L+WVQI+58bu7+iEqoEfHCXikE8BtTbJAN4Oob1lrjfOe
 
 case "$1" in
     configure)
+        # Remove Ubuntu Pro advertisement
+        rm -f /etc/apt/apt.conf.d/20apt-esm-hook.conf
+        
         for divert in "${diverts[@]}"
         do
             source="${divert%%=*}"

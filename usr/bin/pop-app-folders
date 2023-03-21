@@ -96,21 +96,3 @@ esac
 echo "1" > "${CACHE_PATH}"
 
 fi
-
-if [ "${CACHE_VERSION}" -lt "2" ]
-then
-
-echo "Migrating to version 2"
-
-    str1=$(pro config show | grep -w 'apt_news' | awk '{print $2}')
-    str2="False"
-
-    if [ "$str1" = "$str2" ]; then
-        exit
-    else
-        $(sudo pro config set apt_news=false)
-    fi
-
-echo "2" > "${CACHE_PATH}"
-
-fi

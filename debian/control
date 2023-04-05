@@ -15,10 +15,7 @@ Depends: ${misc:Depends},
          gnome-menus,
          gnupg,
          plymouth-theme-pop-basic,
-         pop-keyring,
          python3-repolib (>> 1.3.9),
-         ubuntu-minimal,
-         ubuntu-standard,
 Recommends: pop-default-settings-zram
 Conflicts: pipewire-media-session
 Description: default settings for Pop OS

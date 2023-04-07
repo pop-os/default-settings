@@ -14,6 +14,7 @@ diverts=(
     "/etc/lsb-release=/etc/pop-os/lsb-release"
     "/etc/os-release=/etc/pop-os/os-release"
     "/usr/lib/os-release=/etc/pop-os/os-release"
+    "/etc/apt/apt.conf.d/20apt-esm-hook.conf=/etc/pop-os/apt/20apt-esm-hook.conf"
 )
 
 ISO_KEY="-----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -71,13 +72,12 @@ fOyJI22NfTI+3SMAsMQ8L+WVQI+58bu7+iEqoEfHCXikE8BtTbJAN4Oob1lrjfOe
 
 case "$1" in
     configure)
-        # Remove Ubuntu Pro advertisement
-        rm -f /etc/apt/apt.conf.d/20apt-esm-hook.conf
-        
         for divert in "${diverts[@]}"
         do
             source="${divert%%=*}"
             dest="${divert#*=}"
+
+            touch "${source}"
 
             dpkg-divert --add --package pop-default-settings --rename --divert "$source.diverted" "$source"
 

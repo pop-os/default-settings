@@ -14,6 +14,7 @@ diverts=(
     "/etc/lsb-release=/etc/pop-os/lsb-release"
     "/etc/os-release=/etc/pop-os/os-release"
     "/usr/lib/os-release=/etc/pop-os/os-release"
+    "/etc/apt/apt.conf.d/20apt-esm-hook.conf=/etc/pop-os/apt/20apt-esm-hook.conf"
 )
 
 case "$1" in

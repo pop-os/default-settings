@@ -1,0 +1,5 @@
+#!/bin/sh
+# Make sure MGLRU is enabled.
+echo Y > /sys/kernel/mm/lru_gen/enabled
+# Preserve memory that was accessed within the last second.
+echo 1000 > /sys/kernel/mm/lru_gen/min_ttl_ms

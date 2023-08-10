@@ -1,0 +1,9 @@
+[Unit]
+Description=Configures MGLRU for desktop responsiveness
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/pop-lru-config
+
+[Install]
+WantedBy=multi-user.target

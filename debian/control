@@ -16,13 +16,19 @@ Depends: ${misc:Depends},
          gnupg,
          plymouth-theme-pop-basic,
          python3-repolib (>> 1.3.9),
-Recommends: pop-default-settings-zram
+Recommends: pop-default-settings-lru, pop-default-settings-zram
 Conflicts: pipewire-media-session
 Description: default settings for Pop OS
  This package contains the default settings used by Pop.
 
+Package: pop-default-settings-lru
+Architecture: all
+Depends: ${misc:Depends}, pop-default-settings
+Description: default settings for MGLRU on Pop
+ Configures ideal mglru parameters for desktop responsiveness
+
 Package: pop-default-settings-zram
 Architecture: all
 Depends: ${misc:Depends}, pop-default-settings, util-linux
-Description: default settings for ZRAM on Pop OS
- This package contains the default zram settings used by Pop.
+Description: default settings for ZRAM on Pop
+ Configures ideal zram parameters for desktop responsiveness

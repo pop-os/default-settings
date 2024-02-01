@@ -5,7 +5,6 @@ set -e
 # Make sure this is in sync with postinst
 package=pop-default-settings
 diverts=(
-    "/etc/gdm3/custom.conf=/etc/pop-os/gdm3/custom.conf"
     "/etc/issue=/etc/pop-os/issue"
     "/etc/issue.net=/etc/pop-os/issue.net"
     "/etc/legal=/etc/pop-os/legal"

@@ -4,7 +4,6 @@ etc/chrony/conf.d/10-system76-nts.conf
 etc/chrony/sources.d/system76-nts.sources
 etc/modules-load.d/pop-modules.conf
 etc/pop-os/flatpak/flathub.flatpakrepo
-etc/pop-os/gdm3/custom.conf
 etc/pop-os/issue
 etc/pop-os/issue.net
 etc/pop-os/legal

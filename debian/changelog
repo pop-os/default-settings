@@ -1,3 +1,10 @@
+pop-default-settings (6.0.0) noble; urgency=medium
+
+  * Support 24.04
+  * Remove gdm3 config override
+
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 01 Feb 2024 10:15:33 -0700
+
 pop-default-settings (5.1.0) impish; urgency=medium
 
   * Use apt.pop-os.org/release for main Pop!_OS repository

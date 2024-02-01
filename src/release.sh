@@ -3,7 +3,7 @@
 source /etc/os-release
 NAME="Pop!_OS"
 case "${VERSION_ID}" in
-    18.04|20.04|22.04)
+    18.04|20.04|22.04|24.04)
         VERSION="${VERSION_ID} LTS"
         ;;
     *)

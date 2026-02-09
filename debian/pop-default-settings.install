@@ -19,12 +19,16 @@ etc/xdg/autostart/pop-app-folders.desktop
 etc/xdg/autostart/pop-flatpak-repos.desktop
 lib/systemd/system-sleep/pop-default-settings_bluetooth-suspend
 lib/udev/rules.d/60-block-pop.rules
+lib/udev/rules.d/85-iw-regulatory.rules
 usr/bin/pop-app-folders
 usr/bin/pop-cosmic-favorites
 usr/bin/pop-flatpak-repos
 usr/lib/firefox/browser/defaults/preferences/pop-default-settings.js
 usr/lib/firefox/defaults/pref/pop-default-settings.js
+usr/lib/iw-set-regdomain
 usr/lib/systemd/journald.conf.d/pop.conf
+usr/lib/systemd/system/iw-set-regdomain.path
+usr/lib/systemd/system/iw-set-regdomain.service
 usr/share/applications/pop-mimeapps.list
 usr/share/gtksourceview-3.0/styles/pop-dark.xml
 usr/share/gtksourceview-3.0/styles/pop-light.xml

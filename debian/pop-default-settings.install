@@ -29,6 +29,7 @@ usr/lib/iw-set-regdomain
 usr/lib/systemd/journald.conf.d/pop.conf
 usr/lib/systemd/system/iw-set-regdomain.path
 usr/lib/systemd/system/iw-set-regdomain.service
+usr/lib/systemd/user/dbus-broker.service.d/10-cosmic-nofile.conf
 usr/share/applications/pop-mimeapps.list
 usr/share/gtksourceview-3.0/styles/pop-dark.xml
 usr/share/gtksourceview-3.0/styles/pop-light.xml

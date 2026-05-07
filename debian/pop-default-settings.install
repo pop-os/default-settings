@@ -13,7 +13,6 @@ etc/pop-os/lsb-release
 etc/pop-os/os-release
 etc/pop-os/update-motd.d/10-help-text
 etc/pop-os/update-motd.d/50-motd-news
-etc/profile.d/pop-im-ibus.sh
 etc/sysctl.d/10-pop-default-settings.conf
 etc/update-manager/release-upgrades.d/pop-default-settings.cfg
 etc/xdg/autostart/pop-app-folders.desktop

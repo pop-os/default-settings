@@ -5,6 +5,7 @@ debian/
 !debian/*.postrm
 !debian/*.prerm
 !debian/*.service
+!debian/*.triggers
 !debian/changelog
 !debian/compat
 !debian/copyright

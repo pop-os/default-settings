@@ -3,6 +3,7 @@ etc/apt/preferences.d/pop-default-settings
 etc/chrony/conf.d/10-system76-nts.conf
 etc/chrony/sources.d/system76-nts.sources
 etc/modules-load.d/pop-modules.conf
+etc/modprobe.d/pop-default-settings-dirty-frag.conf
 etc/pop-os/flatpak/cosmic.flatpakrepo
 etc/pop-os/flatpak/flathub.flatpakrepo
 etc/pop-os/issue

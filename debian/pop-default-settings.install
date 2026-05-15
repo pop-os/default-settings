@@ -20,6 +20,7 @@ etc/xdg/autostart/pop-app-folders.desktop
 etc/xdg/autostart/pop-flatpak-repos.desktop
 lib/systemd/system-sleep/pop-default-settings_bluetooth-suspend
 lib/udev/rules.d/60-block-pop.rules
+lib/udev/rules.d/60-ntfs3.rules
 lib/udev/rules.d/85-iw-regulatory.rules
 usr/bin/pop-app-folders
 usr/bin/pop-cosmic-favorites

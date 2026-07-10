@@ -2,7 +2,6 @@ etc/apt/apt.conf.d/76pop-default-settings
 etc/apt/preferences.d/pop-default-settings
 etc/chrony/conf.d/10-system76-nts.conf
 etc/chrony/sources.d/system76-nts.sources
-etc/modules-load.d/pop-modules.conf
 etc/pop-os/flatpak/cosmic.flatpakrepo
 etc/pop-os/flatpak/flathub.flatpakrepo
 etc/pop-os/issue
@@ -25,6 +24,7 @@ usr/bin/pop-flatpak-repos
 usr/lib/firefox/browser/defaults/preferences/pop-default-settings.js
 usr/lib/firefox/defaults/pref/pop-default-settings.js
 usr/lib/iw-set-regdomain
+usr/lib/modules-load.d/pop-modules.conf
 usr/lib/systemd/journald.conf.d/pop.conf
 usr/lib/systemd/system/iw-set-regdomain.path
 usr/lib/systemd/system/iw-set-regdomain.service

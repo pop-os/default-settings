@@ -1,0 +1,2 @@
+# Enables udisks to mount NTFS parititons with the ntfs3 module by default.
+SUBSYSTEM=="block", ENV{ID_FS_TYPE}=="ntfs", ENV{ID_FS_TYPE}="ntfs3" , ENV{UDISKS_FILESYSTEM_SHARED}="0"

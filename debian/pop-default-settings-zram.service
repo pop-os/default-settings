@@ -3,7 +3,9 @@ Description=Auto-configure and enable zram on Pop
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/pop-zram-config
+ExecStart=/usr/bin/pop-zram-config start
+ExecStop=/usr/bin/pop-zram-config stop
+RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target

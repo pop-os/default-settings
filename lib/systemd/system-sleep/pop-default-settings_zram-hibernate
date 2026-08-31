@@ -1,0 +1,7 @@
+#!/bin/sh
+systemctl is-enabled pop-default-settings-zram >/dev/null || exit 0
+if [ "${1}" == "pre" ]; then
+    systemctl stop pop-default-settings-zram
+elif [ "${1}" == "post" ]; then
+    systemctl start pop-default-settings-zram
+fi

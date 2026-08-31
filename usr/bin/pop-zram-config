@@ -2,6 +2,13 @@
 # Copyright 2022 System76 <info@system76.com>
 # SPDX-License-Identifier: GPL-3.0-only
 
+if test "${1}" == "stop"; then
+    sync
+    cat > /proc/sys/vm/drop_caches <<< 3
+    test -b /dev/zram0 && swapoff /dev/zram0 && modprobe -r zram
+    exit 0
+fi
+
 # If a zram device already exists, ignore
 test -b /dev/zram0 && exit 0
 

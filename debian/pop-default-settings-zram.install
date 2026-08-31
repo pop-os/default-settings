@@ -1,2 +1,3 @@
 etc/default/pop-zram
+lib/systemd/system-sleep/pop-default-settings_zram-hibernate
 usr/bin/pop-zram-config

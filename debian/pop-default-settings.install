@@ -21,6 +21,7 @@ lib/udev/rules.d/85-iw-regulatory.rules
 usr/bin/pop-app-folders
 usr/bin/pop-cosmic-favorites
 usr/bin/pop-flatpak-repos
+usr/lib/dracut/dracut.conf.d/50-pop.conf
 usr/lib/firefox/browser/defaults/preferences/pop-default-settings.js
 usr/lib/firefox/defaults/pref/pop-default-settings.js
 usr/lib/iw-set-regdomain
